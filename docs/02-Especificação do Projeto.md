@@ -12,15 +12,15 @@ A ideia de criar uma plataforma que satisfaça o maior número de usuários dist
 - Escolaridade: Cursando o ensino superior
 - Aplicativos: <br>- Instagram <br>- Twitter <br>- Tiktok
 - Motivações
-Se preocupa com a grande quantidade de animais abandonados.
+<br>Se preocupa com a grande quantidade de animais abandonados.
 Quer ajudar na divulgação de animais de rua disponíveis para adoção.
 
 - Frustrações
-Não conhece nenhuma plataforma que facilite a adoção de animais.
+<br>Não conhece nenhuma plataforma que facilite a adoção de animais.
 <br>Tem dificuldade de mobilizar pessoas para encontrar um lar adotivo para animais.
 
 - História
-Laura é estudante de psicologia, mora com os pais e o irmão. Laura nunca adotou um animal, mas já ajudou, por meio de divulgações em redes sociais, a encontrar um lar para o animal. Ela acredita que um pet pode trazer melhoras para a saúde mental do tutor, mas também trás mais responsabilidades.
+<br>Laura é estudante de psicologia, mora com os pais e o irmão. Laura nunca adotou um animal, mas já ajudou, por meio de divulgações em redes sociais, a encontrar um lar para o animal. Ela acredita que um pet pode trazer melhoras para a saúde mental do tutor, mas também trás mais responsabilidades.
 
 ######  Guilherme Gomes
 - Idade: 34
@@ -28,15 +28,15 @@ Laura é estudante de psicologia, mora com os pais e o irmão. Laura nunca adoto
 - Escolaridade: Superior completo
 - Aplicativos: <br>- Instagram <br>- Twitter
 - Motivações
-Quer adotar um animal pequeno e calmo. 
+<br>Quer adotar um animal pequeno e calmo. 
 
 - Frustrações
-Não conhece nenhuma plataforma que facilite a adoção de animais.
+<br>Não conhece nenhuma plataforma que facilite a adoção de animais.
 <br>Tem dificuldade em achar um animal que caiba nas suas limitações.
 
 
 - História
-Guilherme é casado e mora com sua esposa em um apartamento pequeno. Acredita que animais são os melhores companheiros das pessoas.
+<br>Guilherme é casado e mora com sua esposa em um apartamento pequeno. Acredita que animais são os melhores companheiros das pessoas.
 
 
 ## Histórias de Usuários
