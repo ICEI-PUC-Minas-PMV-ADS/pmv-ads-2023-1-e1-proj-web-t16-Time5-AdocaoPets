@@ -51,9 +51,6 @@ Quer ajudar na divulgação de animais de rua disponíveis para adoção.
 | ONG | cadastrar animais de rua disponíveis para adoção | conseguir realizar as doações |
 
 
-
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
 ## Requisitos
 
 Os requisitos do projeto são definidos por meio dos requisitos funcionais que descrevem as possibilidades interação dos usuários, bem como os requisitos não funcionais que descrevem os aspectos que o sistema deverá apresentar de maneira geral. Estes requisitos são apresentados a seguir.
