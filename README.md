@@ -1,23 +1,23 @@
 # TÍTULO DO PROJETO
 
-`CURSO`
+Tecnologia em Análise e Desenvolvimento de Sistemas
 
-`DISCIPLINA`
-
-`SEMESTRE`
+Projeto: Desenvolvimento de Aplicação Web Front-End - Turma 16 - 2023/1
 
 Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Andréia Borges da Silva de Moura Fé
+* Bárbara Fernandes Sena
+* Bruno Nogueira Martins Cardoso
+* Gustavo da Costa Monte
+* Lucas Ayala Soares
+* Rafael Xavier Franco
 
 ## Orientador
 
-* Nome completo do professor 1
+* Wagner Cipriano da Silva
 
 ## Instruções de utilização
 
