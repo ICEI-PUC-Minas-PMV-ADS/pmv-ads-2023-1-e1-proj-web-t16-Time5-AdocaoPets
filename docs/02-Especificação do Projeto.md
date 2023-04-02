@@ -6,8 +6,37 @@ Para realizar essa etapa do projeto, o grupo coletou dados por meio de pesquisas
 
 A ideia de criar uma plataforma que satisfaça o maior número de usuários distintos entre si é, ao primeiro ver, a forma mais lógica de se alcançar uma plataforma bem-sucedida. Entretanto, para COOPER e al. (2014) essa lógica está fadada ao fracasso, uma vez que tentar criar algo que agrade a todos têm como resultado algo que não agrada ninguém. E para evitar isso, criamos as chamadas “personas”, que são representações de usuários fictícios, mas que agrupam as motivações, comportamentos (COOPER e al., 2014) e necessidades reais do nosso público-alvo. 
 
-| Laura Santos |
-| Idade: 20 <br> Ocupação: Estudande <br> Escolaridade: Cursando o ensino superior | Aplicativos: <br> - Instagram - Twitter - Tiktok
+######  Laura Santos
+- Idade: 20
+- Ocupação: Estudande
+- Escolaridade: Cursando o ensino superior
+- Aplicativos: <br>- Instagram <br>- Twitter <br>- Tiktok
+- Motivações
+Se preocupa com a grande quantidade de animais abandonados.
+Quer ajudar na divulgação de animais de rua disponíveis para adoção.
+
+- Frustrações
+Não conhece nenhuma plataforma que facilite a adoção de animais.
+<br>Tem dificuldade de mobilizar pessoas para encontrar um lar adotivo para animais.
+
+- História
+Laura é estudante de psicologia, mora com os pais e o irmão. Laura nunca adotou um animal, mas já ajudou, por meio de divulgações em redes sociais, a encontrar um lar para o animal. Ela acredita que um pet pode trazer melhoras para a saúde mental do tutor, mas também trás mais responsabilidades.
+
+######  Guilherme Gomes
+- Idade: 34
+- Ocupação: Médico
+- Escolaridade: Superior completo
+- Aplicativos: <br>- Instagram <br>- Twitter
+- Motivações
+Quer adotar um animal pequeno e calmo. 
+
+- Frustrações
+Não conhece nenhuma plataforma que facilite a adoção de animais.
+<br>Tem dificuldade em achar um animal que caiba nas suas limitações.
+
+
+- História
+Guilherme é casado e mora com sua esposa em um apartamento pequeno. Acredita que animais são os melhores companheiros das pessoas.
 
 
 ## Histórias de Usuários
