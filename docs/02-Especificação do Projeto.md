@@ -10,7 +10,7 @@ A ideia de criar uma plataforma que satisfaça o maior número de usuários dist
 
 | Laura Santos |
 | ------------- | 
-|![Foto da Laura Santos](https://myoctocat.com/assets/images/base-octocat.svg)|
+|<img src="https://static.vecteezy.com/ti/vetor-gratis/p3/13431526-retrato-de-uma-mulher-negra-sorridente-casual-com-afro-ilustracao-em-plana-de-uma-jovem-com-brincos-de-argola-olhando-de-soslaio-uma-senhora-de-tunica-listrada-avatar-de-desenho-animado-desenhado-a-mao-para-rede-social-vetor.jpg" width=150> |
 | Idade: 20  | 
 | Ocupação: Estudante  | 
 | Escolaridade: Cursando o ensino superior  | 
@@ -20,10 +20,9 @@ A ideia de criar uma plataforma que satisfaça o maior número de usuários dist
 | História: <br>Laura é estudante de psicologia, mora com os pais e o irmão. Laura nunca adotou um animal, mas já ajudou, por meio de divulgações em redes sociais, a encontrar um lar para o animal. Ela acredita que um pet pode trazer melhoras para a saúde mental do tutor, mas também trás mais responsabilidades.  ||
 
 
-
-
 | Guilherme Gomes |
 | ------------- | 
+|<img src="https://static.vecteezy.com/ti/vetor-gratis/p1/2275847-avatar-masculino-perfil-icone-de-homem-caucasiano-sorridente-vetor.jpg" width=150> |
 | Idade: 34  | 
 | Ocupação: Médico  | 
 | Escolaridade: Superior completo  | 
