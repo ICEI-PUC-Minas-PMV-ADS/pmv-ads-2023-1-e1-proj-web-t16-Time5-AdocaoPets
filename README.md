@@ -1,4 +1,4 @@
-# TÍTULO DO PROJETO
+# Aplicação Web: Adoção Pets
 
 Tecnologia em Análise e Desenvolvimento de Sistemas
 
