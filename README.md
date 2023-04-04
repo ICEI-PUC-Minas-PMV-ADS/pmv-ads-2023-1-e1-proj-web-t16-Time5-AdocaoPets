@@ -4,8 +4,6 @@ Tecnologia em Análise e Desenvolvimento de Sistemas
 
 Projeto: Desenvolvimento de Aplicação Web Front-End - Turma 16 - 2023/1
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
-
 ## Integrantes
 
 * Andréia Borges da Silva de Moura Fé
