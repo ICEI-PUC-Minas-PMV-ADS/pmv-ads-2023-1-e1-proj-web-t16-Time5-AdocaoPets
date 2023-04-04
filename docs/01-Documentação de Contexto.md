@@ -22,7 +22,7 @@ O problema apresentado é a situação de abandono de animais no Brasil e as con
 
 O aplicativo web destina-se a acelerar a resolução do problema de abandono de animais domésticos no Brasil de maneira sustentável e duradoura, ao fornecer a entidades do terceiro setor e a indivíduos uma ferramenta adicional além dos canais tradicionais de adoção (como visitas a feiras, ONGs e festivais) centralizando as informações necessárias para a realização de uma adoção para que assim, o consumidor possa tomar uma decisão inteligente e da comodidade de seu lar.
 
-Objetivos específicos:
+<li> Objetivos específicos: </li>
 1. Providenciar uma plataforma digital onde seja possível: <br>
     a. cadastrar pessoas físicas e ONGs <br>
     b. fazer upload de dados de animais (imagem e texto) <br>
