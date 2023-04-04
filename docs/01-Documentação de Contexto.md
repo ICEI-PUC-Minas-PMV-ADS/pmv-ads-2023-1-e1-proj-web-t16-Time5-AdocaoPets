@@ -1,5 +1,3 @@
-# Introdução
-
 ## Documentação de Contexto
 
 O número crescente de abandono de animais e a consequente condição de rua em que se encontravam fez com que a Organização Mundial de Saúde Animal (OIE) dedicasse a partir de 2009 um capítulo inteiro sobre o controle da população de cachorros em situação de rua no seu relatório de "Código Sanitário de Animais Terrestres" (WOAH, 2016).
