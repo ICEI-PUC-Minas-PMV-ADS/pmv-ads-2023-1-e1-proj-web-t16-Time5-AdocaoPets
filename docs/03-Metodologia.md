@@ -39,6 +39,10 @@ As ferramentas empregadas no projeto são:
 `Justificativa` <br>
 `Público-alvo` <br>
 
+##### 3.2.1 Execução:
+
+##### 3.2.2 Evidências:
+
 ### 3.3 Especificação do Projeto
 
 ##### 3.3.1 Sprint 2:
