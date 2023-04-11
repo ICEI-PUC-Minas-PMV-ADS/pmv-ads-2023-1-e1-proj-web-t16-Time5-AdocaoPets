@@ -30,24 +30,25 @@ As ferramentas empregadas no projeto são:
 
 ### 3. Processo
 
-#### 3.1 Documentação de Contexto
+#### 3.1 Documentação de Contexto e Especificação do Projeto
 
-##### 3.2 Sprint 1:
+##### 3.1.2 Sprint 1:
 
 `Problemas` <br>
 `Objetivos` <br>
 `Justificativa` <br>
 `Público-alvo` <br>
 
-##### 3.2.1 Execução:
-
-##### 3.2.2 Evidências:
-
-### 3.3 Especificação do Projeto
-
-##### 3.3.1 Sprint 2:
-
 `Personas` <br>
 `História de usuários` <br>
 `Requisitos do projeto`: Requisitos funcionais, requisitos não-funcionais e restições.
+
+##### 3.1.2 Execução:
+
+##### 3.1.3 Evidências:
+
+
+#### 3.2. Metolodogia
+
+
 
