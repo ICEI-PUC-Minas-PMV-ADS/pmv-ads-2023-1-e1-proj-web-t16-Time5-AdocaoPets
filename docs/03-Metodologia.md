@@ -4,7 +4,7 @@
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
 
 
-## Equipe de Trabalho
+## 1. Equipe de Trabalho
 
 A equipe de trabalho do projeto foi divida de acordo com os três papéis propostos pela metodologia SCRUM.
 
@@ -14,7 +14,7 @@ São eles:
 - `Scrum Master`: Andréia Borges da Silva de Moura Fé
 - `Equipe de Desenvolvimento`: <br> Bárbara Fernandes Sena <br>  Lucas Ayala Soares <br>  Rafael Xavier Franco
 
-### Ferramentas
+### 2. Ferramentas
 
 As ferramentas empregadas no projeto são:
 
@@ -28,9 +28,22 @@ As ferramentas empregadas no projeto são:
 | Servidor de hospedagem  | Ainda não definido |  --  |
  
 
-### Processo
+### 3. Processo
 
-Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
- 
+#### 3.1 Documentação de Contexto
 
+##### 3.2 Sprint 1:
+
+`Problemas` <br>
+`Objetivos` <br>
+`Justificativa` <br>
+`Público-alvo` <br>
+
+### 3.2 Especificação do Projeto
+
+##### 3.2 Sprint 2:
+
+`Personas` <br>
+`História de usuários` <br>
+`Requisitos do projeto`: Requisitos funcionais, requisitos não-funcionais e restições.
 
