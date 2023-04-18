@@ -14,7 +14,7 @@ São eles:
 - `Scrum Master`: Andréia Borges da Silva de Moura Fé
 - `Equipe de Desenvolvimento`: <br> Bárbara Fernandes Sena <br>  Lucas Ayala Soares <br>  Rafael Xavier Franco
 
-### 2. Ferramentas
+## 2. Ferramentas
 
 As ferramentas empregadas no projeto são:
 
@@ -27,7 +27,7 @@ As ferramentas empregadas no projeto são:
 | Ferramenta de desenvolvimento  | Ainda não definido | -- |
 | Servidor de hospedagem  | Ainda não definido |  --  |
  
-### 3. Processo
+## 3. Processo
 
 #### 3.1 Product Backlog:
 
@@ -44,6 +44,8 @@ As ferramentas empregadas no projeto são:
 `Requisitos do projeto`: Requisitos funcionais, requisitos não-funcionais e restições.
 
 ##### 3.2.1 Planejamento:
+
+![Planejamento2-github](https://user-images.githubusercontent.com/104398945/232906098-adc9da58-58e7-432c-8eec-dfa2684068d1.png)
 
 ##### 3.2.2 Execução:
 
