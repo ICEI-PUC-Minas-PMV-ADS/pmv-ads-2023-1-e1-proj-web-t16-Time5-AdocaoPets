@@ -22,7 +22,7 @@ As ferramentas empregadas no projeto são:
 | ------------- | ------------- | ------------- |
 | Repositório de código fonte  | Github  | [Repositório Github](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t16-Time5-AdocaoPets) |
 | Comunicação  | Discord <br> WhatsApp <br> Teams  |  N/A  |
-| Gerenciamento de projeto  | Trello | [Link Trello](https://trello.com/b/TEzZxUhc/desenvolvimento-de-aplica%C3%A7%C3%A3o-web-front-end) |
+| Gerenciamento de projeto  | Github | [Link Planejamento](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/376) |
 | Wireframes  | Ainda não definido | --  |
 | Ferramenta de desenvolvimento  | Ainda não definido | -- |
 | Servidor de hospedagem  | Ainda não definido |  --  |
