@@ -33,7 +33,7 @@ As ferramentas empregadas no projeto são:
 
 `Documentação de Contexto`, `Especificação do Projeto`, `Metodologia`, `Projeto de Interface`, `Template do Site`, `Programação de Funcionalidades`, `Plano de Testes de Software` e `Registro de Testes de Software`.
 
-##### 3.2 Sprint 1:
+#### 3.2 Sprint 1:
 
 `Problemas` <br>
 `Objetivos` <br>
@@ -61,7 +61,7 @@ Links: <br>
 - [Especificação do Projeto](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t16-Time5-AdocaoPets/blob/main/docs/02-Especifica%C3%A7%C3%A3o%20do%20Projeto.md)
 
 
-##### 3.3 Sprint 2:
+#### 3.3 Sprint 2:
 
 `Metodologia:` Equipe de Trabalho, Ferramentas e Processos <br>
 `Projeto de Interface:` Fluxo do Usuário e Wireframes.
@@ -81,7 +81,7 @@ Links: <br>
 
 
  
-##### 3.4 Sprint 3:
+#### 3.4 Sprint 3:
 
 `Template do Site:`
 
@@ -98,7 +98,7 @@ Links: <br>
 
 
 
-##### 3.5 Sprint 4:
+#### 3.5 Sprint 4:
 
 `Programação de Funcionalidades` <br> 
 `Plano de Testes de Software` <br>
@@ -116,7 +116,7 @@ Links: <br>
 ##### 3.5.3 Evidências:
 
 
-##### 3.6 Sprint 5:
+#### 3.6 Sprint 5:
 
 `Implantação` <br> `Apresentação da Solução`
 
