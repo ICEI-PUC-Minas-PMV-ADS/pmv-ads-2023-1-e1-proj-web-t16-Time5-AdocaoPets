@@ -47,6 +47,11 @@ As ferramentas empregadas no projeto são:
 
 ##### 3.2.2 Execução:
 
+| Tarefa | Responsável | 
+| ------------- | ------------- | 
+| Documentação de Contexto  | Gustavo Monte <br> Lucas Ayala |
+| Especificação do Projeto | Andreia Borges <br> Bárbara Sena <br> Rafael Xavier <br> Bruno Nogueira|
+
 ##### 3.2.3 Evidências:
 
 Links: <br> 
