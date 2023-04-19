@@ -113,6 +113,8 @@ Links: <br>
  
 #### 3.4 Sprint 3:
 
+➡️ **Tarefas**: 
+
 `Template do Site:`
 
 ##### 3.4.1 Planejamento:
@@ -129,6 +131,8 @@ Links: <br>
 
 
 #### 3.5 Sprint 4:
+
+➡️ **Tarefas**: 
 
 `Programação de Funcionalidades` <br> 
 `Plano de Testes de Software` <br>
@@ -147,6 +151,8 @@ Links: <br>
 
 
 #### 3.6 Sprint 5:
+
+➡️ **Tarefas**: 
 
 `Implantação` <br> `Apresentação da Solução`
 
