@@ -31,9 +31,36 @@ As ferramentas empregadas no projeto são:
 
 #### 3.1 Product Backlog:
 
-`Documentação de Contexto`, `Especificação do Projeto`, `Metodologia`, `Projeto de Interface`, `Template do Site`, `Programação de Funcionalidades`, `Plano de Testes de Software` e `Registro de Testes de Software`.
+As tarefas a serem realizas durante o projeto são:
+
+1. `Documentação de Contexto:`
+   - Problemas
+   - Objetivos
+   - Justificativa
+   - Público Alvo
+
+2. `Especificação do Projeto:`
+   - Personas
+   - História de Usuários
+   - Requisitos do Projeto
+     - Requisitos Funcionais
+     - Requisiots Não-funcionais
+     - Restrições
+3. `Metodologia`
+    - Equipe de Trabalho
+    - Ferramentas
+    - Processos
+4. `Projeto de Interface`
+    - Fluxo do Usuário
+    - Wireframes
+5. `Template do Site`
+6. `Programação de Funcionalidades`
+7. `Plano de Testes de Software`
+8. `Registro de Testes de Software`.
 
 #### 3.2 Sprint 1:
+
+➡️ **Tarefas**: 
 
 `Problemas` <br>
 `Objetivos` <br>
@@ -41,7 +68,7 @@ As ferramentas empregadas no projeto são:
 `Público-alvo` <br>
 `Personas` <br>
 `História de usuários` <br>
-`Requisitos do projeto`: Requisitos funcionais, requisitos não-funcionais e restições.
+`Requisitos do projeto`: Requisitos funcionais, requisitos não-funcionais e restrições.
 
 ##### 3.2.1 Planejamento:
 
@@ -62,6 +89,8 @@ Links: <br>
 
 
 #### 3.3 Sprint 2:
+
+➡️ **Tarefas**: 
 
 `Metodologia:` Equipe de Trabalho, Ferramentas e Processos <br>
 `Projeto de Interface:` Fluxo do Usuário e Wireframes.
