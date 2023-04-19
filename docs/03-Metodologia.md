@@ -92,8 +92,14 @@ Links: <br>
 
 ➡️ **Tarefas**: 
 
-`Metodologia:` Equipe de Trabalho, Ferramentas e Processos <br>
-`Projeto de Interface:` Fluxo do Usuário e Wireframes.
+`Metodologia:` <br>
+- Definir a equipe de trabalho, que será dividida em Scrum Master, Product Owner e Equipe de Desenvolvimento <br> 
+- Definir quais ferramentas seram utilizadas para o desenvolvimento e organização do projeto <br>
+- Definir os processos que serão executados em cada sprint de forma detalhada <br><br>
+
+`Projeto de Interface:` <br> 
+- Criar todo o fluxo que o usuário poderá executar no sistema após o desenvolvimento <br>
+- Criar wireframes do prototipo do sistema para que possa ser visualizado uma previa de como ficará após o desenvolvimento
 
 ##### 3.3.1 Planejamento:
 
