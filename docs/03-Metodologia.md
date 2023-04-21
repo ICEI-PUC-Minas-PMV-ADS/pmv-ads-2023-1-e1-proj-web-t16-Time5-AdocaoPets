@@ -94,7 +94,7 @@ Links: <br>
 
 `Metodologia:` <br>
 - Definir a equipe de trabalho, que será dividida em Scrum Master, Product Owner e Equipe de Desenvolvimento <br> 
-- Definir quais ferramentas seram utilizadas para o desenvolvimento e organização do projeto <br>
+- Definir quais ferramentas serão utilizadas para o desenvolvimento e organização do projeto <br>
 - Definir os processos que serão executados em cada sprint de forma detalhada <br><br>
 
 `Projeto de Interface:` <br> 
@@ -125,6 +125,9 @@ Links: <br>
 
 ##### 3.4.1 Planejamento:
 
+![template](https://user-images.githubusercontent.com/104398945/233514172-56cf11bf-00aa-4631-a19a-a0fbe5e72036.png)
+
+
 ##### 3.4.2 Execução:
 
 | Tarefa | Responsável | 
@@ -146,6 +149,8 @@ Links: <br>
 
 ##### 3.5.1 Planejamento:
 
+![funcionalidades](https://user-images.githubusercontent.com/104398945/233514506-b6df19a7-b51c-41dc-9dcd-1fc78d510304.png)
+
 ##### 3.5.2 Execução:
 
 | Tarefa | Responsável | 
@@ -163,6 +168,8 @@ Links: <br>
 `Implantação` <br> `Apresentação da Solução`
 
 ##### 3.6.1 Planejamento:
+
+![implantacao](https://user-images.githubusercontent.com/104398945/233514762-0f6b11b1-2fd6-4c5b-81ae-513b67d3522d.png)
 
 ##### 3.6.2 Execução:
 
