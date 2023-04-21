@@ -95,7 +95,8 @@ Links: <br>
 `Metodologia:` <br>
 - Definir a equipe de trabalho, que será dividida em Scrum Master, Product Owner e Equipe de Desenvolvimento <br> 
 - Definir quais ferramentas serão utilizadas para o desenvolvimento e organização do projeto <br>
-- Definir os processos que serão executados em cada sprint de forma detalhada <br><br>
+- Definir os processos que serão executados em cada sprint de forma detalhada <br>
+- Registrar as evidências <br><br>
 
 `Projeto de Interface:` <br> 
 - Criar todo o fluxo que o usuário poderá executar no sistema após o desenvolvimento <br>
