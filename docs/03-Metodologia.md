@@ -23,7 +23,7 @@ As ferramentas empregadas no projeto são:
 | Repositório de código fonte  | Github  | [Repositório Github](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t16-Time5-AdocaoPets) |
 | Comunicação  | Discord <br> WhatsApp <br> Teams  |  N/A  |
 | Gerenciamento de projeto  | Github | [Link Planejamento](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/376) |
-| Wireframes  | Ainda não definido | --  |
+| Wireframes  | Figma | --  |
 | Ferramenta de desenvolvimento  | Ainda não definido | -- |
 | Servidor de hospedagem  | Ainda não definido |  --  |
  
@@ -54,7 +54,7 @@ As tarefas a serem realizas durante o projeto são:
     - Fluxo do Usuário
     - Wireframes
 5. `Template do Site`
-6. `Programação de Funcionalidades`
+6. `Funcionalidade do Sistema`
 7. `Plano de Testes de Software`
 8. `Registro de Testes de Software`.
 
@@ -110,7 +110,7 @@ Links: <br>
 
 ##### 3.3.2 Execução:
 
-| Tarefa | Responsável | 
+| Tarefa | Responsável |
 | ------------- | ------------- | 
 | Metodologia  | Andreia Borges <br> Bárbara Sena <br> Bruno Nogueira |
 | Projeto de Interface | Lucas Ayala <br> Rafael Xavier |
@@ -133,10 +133,10 @@ Links: <br>
 
 ##### 3.4.2 Execução:
 
-| Tarefa | Responsável | 
-| ------------- | ------------- | 
-| --  | -- |
-| -- | -- |
+| Tarefa | Responsável | Data de entrega | 
+| ------------- | ------------- | ------------- | 
+| --  | -- | -- |
+| -- | -- | -- |
 
 ##### 3.4.3 Evidências:
 
