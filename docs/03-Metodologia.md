@@ -23,7 +23,7 @@ As ferramentas empregadas no projeto são:
 | Repositório de código fonte  | Github  | [Repositório Github](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t16-Time5-AdocaoPets) |
 | Comunicação  | Discord <br> WhatsApp <br> Teams  |  N/A  |
 | Gerenciamento de projeto  | Github | [Link Planejamento](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/376) |
-| Wireframes  | Figma | [Figma](https://www.figma.com/file/GQPk7o8btkE2kqVX0Ja85N/Ado%C3%A7%C3%A3o-de-animais?node-id=0-1&t=FRO2cscHZv6MmtHd-0) |
+| Wireframes  | Figma | [Figma](https://www.figma.com/file/GQPk7o8btkE2kqVX0Ja85N/Ado%C3%A7%C3%A3o-de-animais?node-id=0%3A1&t=FRO2cscHZv6MmtHd-1) |
 | Ferramenta de desenvolvimento  | Ainda não definido | -- |
 | Servidor de hospedagem  | Ainda não definido |  --  |
  
