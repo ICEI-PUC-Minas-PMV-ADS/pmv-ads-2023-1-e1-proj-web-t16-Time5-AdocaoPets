@@ -15,15 +15,21 @@ Cada uma das telas do fluxo é detalhada na seção de Wireframes que se segue. 
 
 ## Wireframes
 
-![Exemplo de Wireframe](img/wireframe-example.png)
-
-São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
+Conforme fluxo de telas do projeto, apresentado no item anterior, as telas do sistema são apresentadas em detalhes nos itens que se seguem. As telas do sistema apresentam uma estrutura comum que é apresentada na Figura X. Nesta estrutura, existem 2 grandes blocos, descritos a seguir. São eles
  
-> **Links Úteis**:
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [Axure](https://www.axure.com/edu) (Licença Educacional)
-> - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)
+> - Cabeçalho - local onde são dispostos elementos fixos de identidade (logo) e navegação principal do site (menu da aplicação);
+> -	Conteúdo - apresenta o conteúdo da tela em questão;
+
+<img src="https://user-images.githubusercontent.com/104398945/236335100-5edcd376-ae6c-4f27-90f9-0a59b5bfe5ea.jpeg">
+
+### Tela cadastro
+
+A tela de cadastro irá inserir o usuário na nossa plataforma para que ele consiga adicionar, adotar ou apadrinhar um pet. 
+Essa tela contêm os seguintes campos:
+
+- Nome completo: Nome completo do tutor, padrinho ou pessoa que quer adotar o pet.
+- E-mail: E-mail válido.
+- Quero: Esse campo tem como objetivo saber o que o usuário pretende fazer na plataforma (adotar, adicionar ou apadrinhar um pet) para que as configurações de sua conta sejam adaptadas para essa necessidade.
+- Senha: Senha válida.
+
+<img src="https://user-images.githubusercontent.com/104398945/236337314-2f315d79-41ed-4ca0-a50f-8bfd2c019491.jpeg">
