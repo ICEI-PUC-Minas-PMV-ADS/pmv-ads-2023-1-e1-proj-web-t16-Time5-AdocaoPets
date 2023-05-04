@@ -33,3 +33,17 @@ Essa tela contêm os seguintes campos:
 - Senha: Senha válida.
 
 <img src="https://user-images.githubusercontent.com/104398945/236337314-2f315d79-41ed-4ca0-a50f-8bfd2c019491.jpeg">
+
+### Tela login
+
+A tela de login irá permitir o usuário entrar e sair da plataforma.
+
+### Tela perfil do usuário
+
+A tela de perfil do usuário contém todas as principais informações que o usuário informou. O usuário é levado para essa tela assim que terminar o cadastro para que o restante das informações sejam inseridas nessa etapa.
+É importante ressaltar que os campos abaixo mencionados têm como objetivo:
+
+- Cidade: Por meio da localização, o usuário terá mais precisão sobre os pets que estão próximos dele.
+- Interesses: Dizer qual a finalidade do usuário: adotar, apadrinhar ou doar um pet.
+- Meus pets: Essa seção irá aparecer apenas se o usuário tiver como interesse doar pets. Assim, será possível ver os pets cadastrados para adoção e apadrinhamento.
+- Sobre mim: Espaço para o usuário contar um pouco da sua história, seus interesses e o que mais achar necessário.
