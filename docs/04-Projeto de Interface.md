@@ -20,7 +20,7 @@ Conforme fluxo de telas do projeto, apresentado no item anterior, as telas do si
 > - Cabeçalho - local onde são dispostos elementos fixos de identidade (logo) e navegação principal do site (menu da aplicação);
 > -	Conteúdo - apresenta o conteúdo da tela em questão;
 
-<img src="https://user-images.githubusercontent.com/104398945/236335100-5edcd376-ae6c-4f27-90f9-0a59b5bfe5ea.jpeg">
+<img src="https://user-images.githubusercontent.com/104398945/236341604-242a3914-7c44-471d-b301-cc7145771d3a.png">
 
 ### Tela cadastro
 
@@ -32,13 +32,15 @@ Essa tela contêm os seguintes campos:
 - Quero: Esse campo tem como objetivo saber o que o usuário pretende fazer na plataforma (adotar, adicionar ou apadrinhar um pet) para que as configurações de sua conta sejam adaptadas para essa necessidade.
 - Senha: Senha válida.
 
-<img src="https://user-images.githubusercontent.com/104398945/236337314-2f315d79-41ed-4ca0-a50f-8bfd2c019491.jpeg">
+<img src="https://user-images.githubusercontent.com/104398945/236341800-40302c1b-9554-4d3f-9920-d77cda12b6a0.png">
 
 ### Tela login
 
 A tela de login irá permitir o usuário entrar e sair da plataforma.
 
 ### Tela perfil do usuário
+
+##### Usuário que quer doar pet
 
 A tela de perfil do usuário contém todas as principais informações que o usuário informou. O usuário é levado para essa tela assim que terminar o cadastro para que o restante das informações sejam inseridas nessa etapa.
 É importante ressaltar que os campos abaixo mencionados têm como objetivo:
@@ -47,3 +49,23 @@ A tela de perfil do usuário contém todas as principais informações que o usu
 - Interesses: Dizer qual a finalidade do usuário: adotar, apadrinhar ou doar um pet.
 - Meus pets: Essa seção irá aparecer apenas se o usuário tiver como interesse doar pets. Assim, será possível ver os pets cadastrados para adoção e apadrinhamento.
 - Sobre mim: Espaço para o usuário contar um pouco da sua história, seus interesses e o que mais achar necessário.
+
+<img src="https://user-images.githubusercontent.com/104398945/236341868-1531017b-3b33-409f-95a3-1e6d35574370.png">
+
+##### Usuário que quer adotar um pet
+
+Essa tela tem a mesma funcionalidade que a tela acima, porém ela simula a tela de um usuário que está buscando um pet para adotar.
+
+<img src="https://user-images.githubusercontent.com/104398945/236341985-2bbbc523-10a2-4649-8280-24fcb63058d7.png">
+
+### Tela perfil do pet
+
+Após o usuário adicionar um pet, o animalzinho terá um perfil próprio contendo suas caractéristicas e necessidades. Além disso, o perfil do animal terá um link que redireciona para o perfil do tutor temporário.
+
+<img src="https://user-images.githubusercontent.com/104398945/236342623-735902ce-be74-409c-a358-e13dee59917e.png">
+
+### Tela explorar
+
+A tela explorar possibilita o usuário navegar pelos cards que contém os pets que combinam com as características/necessidades do usuário. Nessa tela, o usuário poderá também ver as mensagens e as conexões (matches) que foram feitas.
+
+<img src="https://user-images.githubusercontent.com/104398945/236343098-8e4b8704-3042-4286-a73c-7be7fd6c9ea7.png">
