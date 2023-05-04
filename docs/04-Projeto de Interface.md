@@ -34,10 +34,6 @@ Essa tela contêm os seguintes campos:
 
 <img src="https://user-images.githubusercontent.com/104398945/236341800-40302c1b-9554-4d3f-9920-d77cda12b6a0.png">
 
-### Tela login
-
-A tela de login irá permitir o usuário entrar e sair da plataforma.
-
 ### Tela perfil do usuário
 
 ##### Usuário que quer doar pet
