@@ -1,0 +1,63 @@
+#perfil {
+    border: none;
+    background: none;
+}
+
+.informacoes {
+    margin-top: 65px;
+}
+
+.informacoes h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.informacoes h2 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.meus-pets {
+    margin-top: 50px;
+}
+
+.meus-pets h1 {
+    font-size: 20px;
+}
+
+.meus-pets .adicionar {
+    display: flex;
+    align-items: center;
+    justify-content:left;
+}
+
+.meus-pets .adicionar .icone{
+    font-size: 40px;
+    margin-bottom: 38px;
+    color: #FF5B2E;
+}
+
+.btn-adicionar {
+    border: none;
+    background: none;
+}
+
+.estou-procurando {
+    margin-top: 50px;
+}
+
+.estou-procurando h1 {
+    font-size: 20px;
+}
+
+.sobre-mim{
+    margin-top: 50px;
+}
+
+.sobre-mim h1{
+    font-size: 20px;
+}
+
+.text-bg-orange {
+    background-color:#FF5B2E;
+}
