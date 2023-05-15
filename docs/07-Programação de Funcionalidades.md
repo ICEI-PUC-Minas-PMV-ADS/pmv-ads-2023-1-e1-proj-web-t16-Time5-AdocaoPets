@@ -34,3 +34,15 @@ O sistema deve mostrar o perfil das Ongs cadastradas, o cadastro é feito pela p
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t16-Time5-AdocaoPets/assets/124728653/2fa4fc34-a84a-4fe0-94eb-1809c806de90)
 
+RF-09	O sistema deve permitir o compartilhamento dos perfis para fora da plataforma
+
+O compartilhamento de perfis será feito via URL direta da página. Será possível também entrar em contato direto com o responsável pelo animal cadastrado usando o botão no canto inferior da tela como mostrado abaixo.
+
+![Exemplo botao](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t16-Time5-AdocaoPets/assets/128713645/27bbf28a-1322-469e-8d61-ae46ce82bf34)
+
+Estrutura de dados: 
+
+![HTML botao](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t16-Time5-AdocaoPets/assets/128713645/88258057-fb7f-407c-a11b-060fa054b134)
+![CSS botao](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t16-Time5-AdocaoPets/assets/128713645/2b4abe4f-b2c5-49d3-9bb2-2cf30410636c)
+
+
