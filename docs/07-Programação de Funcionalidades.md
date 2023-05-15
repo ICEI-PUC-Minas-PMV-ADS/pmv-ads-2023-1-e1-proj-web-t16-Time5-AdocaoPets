@@ -34,7 +34,7 @@ O sistema deve mostrar o perfil das Ongs cadastradas, o cadastro é feito pela p
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t16-Time5-AdocaoPets/assets/124728653/2fa4fc34-a84a-4fe0-94eb-1809c806de90)
 
-RF-09	O sistema deve permitir o compartilhamento dos perfis para fora da plataforma
+### RF-09 O Sistema deve permitir o compartilhamento  dos perfis para fora da plataforma
 
 O compartilhamento de perfis será feito via URL direta da página. Será possível também entrar em contato direto com o responsável pelo animal cadastrado usando o botão no canto inferior da tela como mostrado abaixo.
 
