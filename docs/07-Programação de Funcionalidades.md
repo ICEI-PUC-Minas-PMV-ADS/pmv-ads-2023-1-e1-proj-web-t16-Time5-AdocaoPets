@@ -28,3 +28,9 @@ Os dados são armazenadas no LocalStorage com estruturas dados baseada em JSON. 
 2. Descompacte o arquivo em uma pasta específica;
 3. Abra o Visual Studio Code e execute o Live Server;
 4. Abra um navegador de Internet e informe a seguinte URL:http://127.0.0.1:5500/AdocaoPets/create.html;
+
+### RF-06 O sistemas deve oferecer cadastro de ONGs parceiras
+O sistema deve mostrar o perfil das Ongs cadastradas, o cadastro é feito pela própria Ong responsável e possui algumas informações importantes. Como o nome da Ong, cidade e serviços oferecidos, além dos pets disponivéis para adoção e uma descrição sobre a Ong.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t16-Time5-AdocaoPets/assets/124728653/2fa4fc34-a84a-4fe0-94eb-1809c806de90)
+
