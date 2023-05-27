@@ -18,8 +18,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/ong_style.css" />
-    <link rel="stylesheet" href="./css/perfil_style.css" />
-    <link rel="stylesheet" href="./css/new_style.css" />
+    <!-- <link rel="stylesheet" href="./css/perfil_style.css" /> -->
+    <!-- <link rel="stylesheet" href="./css/new_style.css" /> -->
     <!-- <link rel="stylesheet" href="./css/style.css" /> -->
   </head>
 
@@ -82,7 +82,14 @@
             <span class="badge text-bg-orange">Lar temporário de pets</span>
           </h2>
           <div class="report">
-            <input type="button" value="Reportar perfil" />
+            <input type="button" class="report-btn" value="Reportar perfil" />
+            <div class="report-toggle">
+            <div class="report-desc">
+              <textarea name="report-text" class="report-cause" id="" cols="20" rows="4" placeholder="Descreva aqui a denúncia."
+              required></textarea>
+              <input type="button" class="report-send" value="Enviar denúncia">
+            </div>
+          </div>
           </div>
         </div>
       </div>
@@ -127,6 +134,8 @@
 
       <class logo-whatsapp> </class>
     </a>
+
+    <script src="./scripts/report.js"></script>
 
     <script
       type="module"
