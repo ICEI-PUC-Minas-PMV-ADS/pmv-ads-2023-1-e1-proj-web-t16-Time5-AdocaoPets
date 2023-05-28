@@ -19,10 +19,10 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body style="background-color: #FFFAF5;">
 
     <!--Menu de navegação-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #e3f2fd;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="./img/Facebook.png" alt="Bootstrap" width="30" height="24">
@@ -42,36 +42,28 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Experiências</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
-                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Cabeçalho/Seção principal da página -->
-    <header class="container_header">
-        <img class="imagem_maior" src="img/fundo-secao-principal.png" class="img-fluid"
-            alt="Imagem de um cachorro e um gato">
-        <div class="container_imagem_menor">
-            <img class="imagem_menor" src="img/dog.png" class="img-fluid" alt="Imagem de um cachorro">
-            <img class="imagem_menor" src="img/cat.png" class="img-fluid" alt="Imagem de um gato">
-        </div>
-        <div class="container_texto">
-            <h1 class="texto_secao_principal">Quer fazer</h1>
-            <p class="cont_texto_secao_principal"> a diferença?</p>
-            <div class="container_botao">
-
-                <a href="" class="botao_secao_principal">Cadastre-se</a>
-                <a href="" class="botao_secao_principal">Entrar</a>
+    <section class="secao__principal d-inline-flex align-items-center" style="justify-content:center">
+        <img src="./img/fundo-secao-principal.png" class=" img-fluid" alt="Imagem de cão e gato">
+        <div class="container__botoes">
+            <h2 class="titulo__principal">Quer fazer</h2>
+            <h1 class="subtitulo__principal">a diferença?</h1>
+            <div class="d-inline-flex justify-content-center">
+                <a href="" class="btn btn-primary btn-lg">Entrar</a>
+                <a href="cadastro.html" class="btn btn-primary btn-lg">Cadastrar</a>
             </div>
         </div>
-    </header>
+    </section>
+
 
     <!--Seção nossos serviços-->
 
-    <section class="container__servicos">
+    <section class="container__secoes servicos">
 
         <h1 class="secao_titulo">Nossos serviços</h1>
         <div class="container__cards">
@@ -102,9 +94,44 @@
         </div>
     </section>
 
+    <!-- Seção Experiências -->
+
+    <section class="container__secoes experiencias">
+
+        <h1 class="secao_titulo">Experiências</h1>
+        <div class="card-group ">
+            <div class="card rounded-4">
+                <img src="./img/experiencia1.jpg" class="card-img-top rounded-4 rounded-bottom-0" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title" style="color:#000958">Pedro Lucas</h5>
+                    <p class=" card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+            <div class="card rounded-4">
+                <img src="./img/experiencia2.jpg" class="card-img-top rounded-4 rounded-bottom-0" alt="...">
+                <div class="card-body ">
+                    <h5 class="card-title" style="color:#000958">Júlia Souza</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.
+                    </p>
+                </div>
+            </div>
+            <div class="card rounded-4">
+                <img src="./img/experiencia3.jpg" class="card-img-top rounded-4 rounded-bottom-0" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title" style="color:#000958">Nicolas Pereira</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This card has even longer content than the first to show that equal height
+                        action.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- Rodapé -->
 
-    <footer class="container_footer">
+    <footer class="container_rodape">
         <div class="container_redes_sociais">
             <a class="rede_social_link" href="#">
                 <img src="img/Instagram.png" alt="Logo Instagram">
