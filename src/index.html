@@ -14,57 +14,41 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!-- Cabeçalho -->
-    <header class="cabecalho">
-        <!-- Ícones que estão na esquerda -->
-        <div class="container">
-            <input type="checkbox" id="menu" class="container__botao">
-            <label for="menu" class="container__rotulo">
-                <span class="cabecalho__menu-hamburguer container__imagem"></span>
-            </label>
-            <!-- Lista ao clicar no menu hamburguer para smartphone-->
-            <ul class="lista-menu">
-                <li class="lista-menu__titulo">Categorias</li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Sobre nós</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Serviços</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Experiências</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Contato</a>
-                </li>
-            </ul>
-            <h1 class="container__titulo">
-                <a href="index.html" class="link_titulopagina"><b class="container__titulo--negrito">Adoção</b>Pets </a>
-            </h1>
-        </div>
 
-        <!-- Lista do menu para desktop-->
-
-        <ul class="opcoes">
-            <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
-            <li class="opcoes__item"><a href="#" class="opcoes__link">Sobre nós</a></li>
-            <li class="opcoes__item"><a href="#" class="opcoes__link">Serviços</a></li>
-            <li class="opcoes__item"><a href="#" class="opcoes__link">Experiências</a></li>
-            <li class="opcoes__item"><a href="#" class="opcoes__link">Contato</a></li>
-        </ul>
-
-        <!-- Ícones que estão na direita -->
-        <div class="container">
-            <a href="#" class="container__link">
-                <img src="img/login_icon.png" alt="Login" class="container__imagem">
-
-                <p class="container__texto">Login</p>
+    <!--Menu de navegação-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #e3f2fd;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./img/Facebook.png" alt="Bootstrap" width="30" height="24">
             </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nossos serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Experiências</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </header>
+    </nav>
 
     <!-- Cabeçalho/Seção principal da página -->
     <header class="container_header">
