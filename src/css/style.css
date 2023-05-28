@@ -193,6 +193,43 @@ body {
     color: var(--azul-escuro);
 }
 
+.secao_titulo {
+    color: var(--azul-escuro);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.secao_titulo {
+    text-align: center;
+    font-size: 36px;
+}
+
+.container__servicos {
+    margin: 2rem 0;
+    padding: 5rem;
+    background-color: var(--azul-claro);
+    text-align: center;
+}
+
+.container__cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-body,
+.card {
+    background-color: var(--laranja);
+}
+
+.card {
+    border-radius: 20px;
+}
+
+.card-title {
+    color: var(--branco-escrita);
+    font-weight: 500;
+}
 
 /* Estilo para tablet */
 
@@ -320,5 +357,7 @@ body {
         justify-content: flex-start;
         flex-wrap: wrap;
     }
+
+
 
 }
