@@ -49,10 +49,10 @@
   <div class="container">
     <div class="row informacoes">
       <div class="col-md-2">
-        <img src="img/perfil1.png" class="" />
+        <img id="" src="img/perfil1.png" class="" />
       </div>
       <div class="col-md-8">
-        <h1>Amanda Ferreira</h1>
+        <h1 id="nome_usuario"></h1>
         <h2>Cidade: Belo Horizonte</h2>
         <h2>
           Interesses: <span class="badge text-bg-orange">Adotar um pet</span>
@@ -110,12 +110,16 @@
         <tbody id="pets-table-body"></tbody>
       </table>
       <div id="petsCard" class="containerMeusPets">
-        <div class="col-md-2">
+        <!-- <div class="col-md-2">
           <div class="row">
             <img src="./img/pet1.png" class="" />
             <span class="mt-2 badge text-bg-orange">Pitoco</span>
           </div>
-        </div>
+          <div class="btn_petContainer">
+            <td><button class="btn_pet">Ver</span></button></td>
+            <td><button class="btn_pet">Excluir</button></td>
+          </div>
+        </div> -->
       </div>
       <div class="col-md-2 text-center adicionar">
         <i class="bi bi-plus-circle-fill icone" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
@@ -176,12 +180,15 @@
               </select><br />
 
               <label for="caracteristicas">Características:</label><br />
-              <input type="checkbox" id="amoroso" name="caracteristicas" value="amoroso" />
+              <input type="checkbox" id="amoroso" name="caracteristicas" value="Amoroso" />
               <label for="amoroso">Amoroso</label><br />
-              <input type="checkbox" id="carismatico" name="caracteristicas" value="carismatico" />
+              <input type="checkbox" id="carismatico" name="caracteristicas" value="Carismático" />
               <label for="carismatico">Carismático</label><br />
-              <input type="checkbox" id="comilao" name="caracteristicas" value="comilao" />
-              <label for="comilao">Comilão</label><br />
+              <input type="checkbox" id="comilao" name="caracteristicas" value="Comilão" />
+              <label for="comilao">Comilão</label><br /><br />
+
+              <label for="nome">Selecione a foto do pet:</label> <br />
+              <input type="file" id="petFile" accept="image/*"><br /><br />
 
               <label id="labelSobreMim" for="sobremim">Sobre mim:</label><br />
               <textarea class="form-control" id="sobremim" class="label_sobremim"></textarea>
@@ -209,6 +216,7 @@
     </div>
   </div>
 
+
   <footer class="container_footer">
     <div class="container_redes_sociais">
       <a class="rede_social_link" href="#">
@@ -229,6 +237,7 @@
     crossorigin="anonymous"></script>
 
   <script src="./js/script.js"></script>
+  <script src="./js/perfil_usuario.js"></script>
 </body>
 
 </html>

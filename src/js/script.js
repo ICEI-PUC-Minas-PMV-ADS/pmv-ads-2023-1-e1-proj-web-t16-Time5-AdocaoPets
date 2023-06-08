@@ -1,3 +1,7 @@
+
+
+
+
 function addPet() {
   const nome = document.getElementById('nome').value;
   const raca = document.getElementById('raca').value;
@@ -5,6 +9,15 @@ function addPet() {
   const especie = document.getElementById('especie').value;
   const sexo = document.getElementById('sexo').value;
   const porte = document.getElementById('porte').value;
+
+
+  // Obtem o elemento de input de arquivo para a imagem
+  const inputImagem = document.getElementById('petFile');
+  const imagemSelecionada = inputImagem.files[0];
+
+  // Crie um objeto URL para a imagem selecionada
+  const urlImagem = URL.createObjectURL(imagemSelecionada);
+
   const sobremim = document.getElementById('sobremim').value;
 
   // Cria um objeto com as características selecionadas pelo usuário
@@ -45,10 +58,15 @@ function addPet() {
       sexo,
       porte,
       caracteristicas,
+      urlImagem,
       sobremim
     });
 
     localStorage.setItem('pets', JSON.stringify(pets));
+
+    // Exibe a imagem do pet no perfil
+    const imagemPet = document.getElementById('imagem_pet');
+    imagemPet.src = urlImagem;
 
     showPets();
     showPetsCard();
@@ -56,7 +74,7 @@ function addPet() {
     msgError.setAttribute('style', 'display: none');
 
     setTimeout(() => {
-      window.location.href = 'create.html';
+      window.location.href = 'perfil_usuario.html';
     }, 500);
   }
 }
@@ -104,11 +122,11 @@ function showPetsCard() {
     card.classList.add('col-md-2');
     card.innerHTML = `
       <div class="row">
-        <img src="./img/pet1.png" class="" />
+        <img id="imagem_pet" src="${pet.urlImagem}" / class="img-fluid">
         <span class="mt-2 badge text-bg-orange">${pet.nome}</span>
       </div>
       <div class="btn_petContainer">
-      <td><button class="btn_pet">Ver</span></button></td>
+      <td><button class="btn_pet" onclick="showPetProfile(${index})">Ver</span></button></td>
       <td><button class="btn_pet" onclick="deletePet(${index})">Excluir</button></td>
       </div>
     `;
@@ -117,8 +135,20 @@ function showPetsCard() {
   });
 }
 
+
+
 showPets();
 showPetsCard();
+
+function showPetProfile(index) {
+  const pets = JSON.parse(localStorage.getItem('pets')) || [];
+  const pet = pets[index];
+
+  localStorage.setItem('currentPet', JSON.stringify(pet));
+
+  window.location.href = 'perfil_pet.html';
+}
+
 
 
 
