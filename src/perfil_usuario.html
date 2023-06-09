@@ -10,7 +10,7 @@
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
     integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./css/style_create.css" />
+  <link rel="stylesheet" href="./css/perfil_usuario_style.css" />
   <link rel="stylesheet" href="./css/new_style.css" />
 </head>
 
@@ -25,13 +25,10 @@
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Explorar</a>
+            <a class="nav-link active" aria-current="page" href="Match.html">Explorar</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Mensagens</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Conexões</a>
           </li>
         </ul>
         <div class="dropdown">
@@ -53,25 +50,21 @@
       </div>
       <div class="col-md-8">
         <h1 id="nome_usuario"></h1>
-        <h2>Cidade: Belo Horizonte</h2>
+        <h2>Cidade: <span class="badge text-bg-orange" id="local_usuario"></span></h2>
         <h2>
-          Interesses: <span class="badge text-bg-orange">Adotar um pet</span>
-          <span class="badge text-bg-orange">Apadrinhar um pet</span>
+          Interesses: <span id="interesses_usuario"></span>
         </h2>
       </div>
     </div>
 
-    <div class="row estou-procurando">
+    <div class=" row estou-procurando">
       <h1>
         Estou procurando
         <i class="bi bi-pencil"></i>
       </h1>
       <div class="grid">
-        <span class="badge text-bg-orange">Cachorro</span>
-        <span class="badge text-bg-orange">Gato</span>
-        <span class="badge text-bg-orange">Filhote</span>
-        <span class="badge text-bg-orange">Brincalhão</span>
-        <span class="badge text-bg-orange">Pequeno porte</span>
+        <span id="estou_procurando_usuario"></span>
+
       </div>
     </div>
 
@@ -80,10 +73,8 @@
         Sobre mim
         <i class="bi bi-pencil"></i>
       </h1>
-      <p>
-        Tenho 27 anos, sou da região central de BH, moro em apartamento,
-        trabalho em casa e estou a procura de um cãozinho ou gatinho para me
-        fazer companhia.
+      <p id="sobre_usuario">
+
       </p>
     </div>
 

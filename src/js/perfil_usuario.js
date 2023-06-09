@@ -1,29 +1,31 @@
-// Obtém os dados do LocalStorage
-var usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
+// Obtém o ID do usuário logado armazenado no localStorage
+let userId = localStorage.getItem('userId');
 
-// Adiciona um novo usuário à tabela
-var novoUsuario = {
-    nome_usuario: 'Brenda', sobrenome_usuario: 'Rodrigues', cep_usuario: '33010-600',
-    email_usuario: 'brenda@gmail.com', senha_usuario: '12345', estou_procurando_usuario: ['cachorro', 'gato', 'pequeno', 'amoroso'],
-    interesses_usuario: ['adotar um pet', 'apadrinhar um pet'], sobre_usuario: 'Tenho 27 anos, sou de região central de BH e gostariade um animal como companhia.'
-};
-usuarios.push(novoUsuario);
+// Obtém os dados do usuário do localStorage
+let formData = JSON.parse(localStorage.getItem('formData')) || [];
 
-// Armazena os dados atualizados de volta no LocalStorage
-localStorage.setItem('usuarios', JSON.stringify(usuarios));
+// Procura pelo usuário com o ID correspondente
+let user = formData.find(user => user && user.id == userId);
 
-const currentUsuario = JSON.parse(localStorage.getItem('currentUsuario'));
+// Verifica se o usuário foi encontrado
+if (user) {
+    // Atualiza os elementos da página com os dados do usuário
+    document.getElementById('nome_usuario').textContent = user.nome_usuario;
+    document.getElementById('local_usuario').textContent = user.local_usuario;
+    document.getElementById('sobre_usuario').textContent = user.sobre_usuario;
 
-// Exibe as informações do pet na página, por exemplo:
-document.getElementById('nome_usuario').textContent = currentUsuario.nome_usuario;
-document.getElementById('raca_pet').textContent = currentPet.raca;
-document.getElementById('local_pet').textContent = currentPet.local;
-document.getElementById('especie_pet').textContent = currentPet.especie;
-document.getElementById('sexo_pet').textContent = currentPet.sexo;
-document.getElementById('porte_pet').textContent = currentPet.porte;
-document.getElementById('sobremim_pet').textContent = currentPet.sobremim;
+    let interesses_usuario = document.querySelectorAll('input[type="checkbox"]:checked');
+    let interessesContainer = document.getElementById('interesses_usuario');
+    interessesContainer.innerHTML = '';
 
+    interesses_usuario.forEach(interesse => {
+        let span = document.createElement('span');
+        span.className = 'badge text-bg-orange';
+        span.textContent = interesse.value;
+        interessesContainer.appendChild(span);
+    });
 
-
-
-
+} else {
+    // Caso o usuário não seja encontrado, faça o tratamento adequado
+    console.log('Usuário não encontrado');
+}
