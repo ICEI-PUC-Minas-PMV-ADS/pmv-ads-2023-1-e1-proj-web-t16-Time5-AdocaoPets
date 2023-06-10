@@ -4,7 +4,7 @@ function signIn(event) {
     let email_usuario = document.getElementById('email_usuario').value;
     let pwd_usuario = document.getElementById('senha_usuario').value;
 
-    // Obter os dados do usuário do localStorage
+    // Obtem os dados do usuário do localStorage
     let formData = JSON.parse(localStorage.getItem('formData')) || [];
 
 

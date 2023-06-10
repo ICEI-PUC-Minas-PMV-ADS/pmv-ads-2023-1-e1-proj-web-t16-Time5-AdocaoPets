@@ -22,6 +22,8 @@ const signUp = e => {
     let celular_usuario = document.getElementById('celular_usuario').value;
     let sobre_usuario = document.getElementById('sobre_usuario').value;
 
+    let pets = [];
+
     let formData = JSON.parse(localStorage.getItem('formData')) || [];
 
     let exist = formData.length &&
@@ -37,14 +39,47 @@ const signUp = e => {
         let interesses_usuario = document.querySelectorAll('input[type="checkbox"]:checked');
         let checkboxValues = Array.from(interesses_usuario).map(interesses_usuario => interesses_usuario.value);
 
+        //Pega imagem do usuario
+        let imagemInput = document.getElementById('imagem_usuario');
+        let imagemFile = imagemInput.files[0];
 
-        formData.push({ id: newUserId, nome_usuario, email_usuario, pwd_usuario, local_usuario, celular_usuario, sobre_usuario, interesses_usuario: checkboxValues });
-        localStorage.setItem('formData', JSON.stringify(formData));
-        document.querySelector('form').reset();
-        document.getElementById('nome_usuario').focus();
-        window.location.href = 'login.html';
+        if (imagemFile) {
+            let reader = new FileReader();
+            reader.onload = function (event) {
+                let imagemDataUrl = event.target.result;
+
+                formData.push({ id: newUserId, nome_usuario, email_usuario, pwd_usuario, local_usuario, celular_usuario, sobre_usuario, interesses_usuario: checkboxValues, imagem_usuario: imagemDataUrl, pets });
+                localStorage.setItem('formData', JSON.stringify(formData));
+                document.querySelector('form').reset();
+                document.getElementById('nome_usuario').focus();
+                window.location.href = 'login.html';
+            };
+
+            reader.readAsDataURL(imagemFile);
+        } else {
+            formData.push({
+                id: newUserId,
+                nome_usuario,
+                email_usuario,
+                pwd_usuario,
+                local_usuario,
+                celular_usuario,
+                sobre_usuario,
+                interesses_usuario: checkboxValues
+            });
+
+            localStorage.setItem('formData', JSON.stringify(formData));
+            document.querySelector('form').reset();
+            document.getElementById('nome_usuario').focus();
+            window.location.href = 'login.html';
+        }
     } else {
         alert("Ops... Usuário duplicado!!!\nVocê já está cadastrado.");
     }
-
 };
+
+document.querySelector('form').addEventListener('submit', signUp);
+
+
+
+

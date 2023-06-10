@@ -7,18 +7,25 @@
     --azul-claro: #61BCE3;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     background-color: var(--cor-de-fundo);
     font-family: var(--fonte-principal);
     font-size: 16px;
     font-weight: 400;
-    height: 100%;
+    overflow-x: hidden;
+    min-height: 100%;
+
 }
 
 /* Seção principal */
 
 .secao__principal {
     width: 100vw;
+    height: 100vh;
     background-color: var(--cor-de-fundo);
 }
 
@@ -64,6 +71,7 @@ body {
 
 .servicos {
     background: linear-gradient(#61BCE3, #bfd0d7);
+
 }
 
 .card-body {
@@ -77,11 +85,12 @@ body {
     padding: 5rem;
     text-align: center;
     width: 100vw;
+    height: 100vh;
 
 }
 
 .container__cards {
-    display: flex;
+
     justify-content: center;
     flex-wrap: wrap;
 }
