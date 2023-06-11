@@ -18,6 +18,9 @@ Os dados são armazenadas no LocalStorage com estruturas dados baseada em JSON. 
 <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t16-Time5-AdocaoPets/assets/104398945/cd618a38-7ae9-4ac5-bd79-e037c2f06a93">
 <br><br>
 
+#### Integrante responsável: <br>
+- Bárbara Sena
+
 #### Requisitos atendidos: <br>
 - RF-02
 
@@ -38,12 +41,45 @@ O sistema deve mostrar o perfil das Ongs cadastradas, o cadastro é feito pela p
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t16-Time5-AdocaoPets/assets/124728653/2fa4fc34-a84a-4fe0-94eb-1809c806de90)
 
+
 ####  Integrante do grupo responsável:
 
 - Andréia Borges
 
 ####  Artefatos da funcionalidade: <br>
 - perfil_ong.html <br>
+=======
+#### Integrante responsável: <br>
+- Andreia Moura
+
+#### Requisitos atendidos: <br>
+- RF-06
+
+####  Artefatos da funcionalidade: <br>
+- perfil_ong.html  <br>
+
+####  Estrutura de dados:
+- Não houve estrutura de dados
+
+### RF-08	O sistema deve permitir que usuários denunciem comportamentos abusivos, perfis falsos ou quaisquer ações que ponham a segurança do usuário em risco
+
+O sistema deve oferecer a opção de reportar perfil, caso esse desrespeite o bom uso do site.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t16-Time5-AdocaoPets/assets/104398945/1efa72c5-df37-4cd3-a35b-0fd5b7abb420)
+
+#### Integrante responsável: <br>
+- Bruno Nogueira
+
+#### Requisitos atendidos: <br>
+- RF-08
+
+####  Artefatos da funcionalidade: <br>
+- report.js  <br>
+
+####  Estrutura de dados:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t16-Time5-AdocaoPets/assets/104398945/8642a8bd-509d-4c17-853d-2eae76cf4d19)
+
 
 ### RF-09 O Sistema deve permitir o compartilhamento  dos perfis para fora da plataforma
 
@@ -51,7 +87,11 @@ O compartilhamento de perfis será feito via URL direta da página. Será possí
 
 ![Exemplo botao](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t16-Time5-AdocaoPets/assets/128713645/27bbf28a-1322-469e-8d61-ae46ce82bf34)
 
+
 ####  Integrante do grupo responsável:
+
+=======
+#### Integrante responsável: <br>
 
 - Lucas Ayala
 
@@ -60,6 +100,8 @@ O compartilhamento de perfis será feito via URL direta da página. Será possí
 ![HTML botao](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t16-Time5-AdocaoPets/assets/128713645/88258057-fb7f-407c-a11b-060fa054b134)
 ![CSS botao](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t16-Time5-AdocaoPets/assets/128713645/2b4abe4f-b2c5-49d3-9bb2-2cf30410636c)
 
+####  Artefatos da funcionalidade: <br>
+- Não gerou artefatos
 
 ####  Artefatos da funcionalidade: <br>
 - Não gerou artefato
