@@ -35,7 +35,7 @@ if (user) {
     // Caso o usuário não seja encontrado, faça o tratamento adequado
     console.log('Usuário não encontrado');
 }
-console.log(user)
+
 var mostrarPet = document.getElementById('meus-pets');
 if (user.interesses_usuario.includes("Doar pet")) {
     mostrarPet.style.display = 'block';
@@ -103,34 +103,41 @@ function addPet() {
     } else {
 
         //Pega imagem do pet
-        let imagemInput = document.getElementById('imagem_usuario');
+        let imagemInput = document.getElementById('petFile');
         let imagemFile = imagemInput.files[0];
+        if (imagemFile) {
+            let reader = new FileReader();
+            reader.onload = function (event) {
+                let imagemDataUrl = event.target.result;
+                user.pets = user.pets || [];
 
+                user.pets.push({
+                    nome,
+                    raca,
+                    local,
+                    especie,
+                    sexo,
+                    porte,
+                    caracteristicas,
+                    sobremim,
+                    imagem: imagemDataUrl
+                });
 
-        user.pets = user.pets || [];
+                localStorage.setItem('formData', JSON.stringify(formData));
 
-        user.pets.push({
-            nome,
-            raca,
-            local,
-            especie,
-            sexo,
-            porte,
-            caracteristicas,
-            sobremim,
-            imagem: imagemFile
-        });
+                //showPets();
+                showPetsCard();
+                msgSuccess.setAttribute('style', 'display: block');
+                msgError.setAttribute('style', 'display: none');
 
-        localStorage.setItem('formData', JSON.stringify(formData));
+                setTimeout(() => {
+                    window.location.href = 'perfil_usuario.html';
+                }, 500);
+                
+            };
 
-        showPets();
-        showPetsCard();
-        msgSuccess.setAttribute('style', 'display: block');
-        msgError.setAttribute('style', 'display: none');
-
-        setTimeout(() => {
-            window.location.href = 'perfil_usuario.html';
-        }, 500);
+            reader.readAsDataURL(imagemFile);
+        }         
     }
 }
 
@@ -181,7 +188,7 @@ function showPetsCard() {
             card.classList.add('col-md-2');
             card.innerHTML = `
                 <div class="row">
-                    <img id="imagem_pet" src="${pet.urlImagem}" class="img-fluid">
+                    <img id="imagem_pet" src="${pet.imagem}" class="img-fluid">
                     <span class="mt-2 badge text-bg-orange">${pet.nome}</span>
                 </div>
                 <div class="btn_petContainer">
