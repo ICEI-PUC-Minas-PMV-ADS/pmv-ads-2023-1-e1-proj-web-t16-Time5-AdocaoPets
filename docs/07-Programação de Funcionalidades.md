@@ -34,6 +34,21 @@ O sistema deve mostrar o perfil das Ongs cadastradas, o cadastro é feito pela p
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t16-Time5-AdocaoPets/assets/124728653/2fa4fc34-a84a-4fe0-94eb-1809c806de90)
 
+### RF-08 O sistema deve permitir que usuários denunciem comportamentos abusivos, perfis falsos ou quaisquer ações que ponham a segurança do usuário em risco.
+
+O sistema deve ser capaz de receber possíveis denúncias sobre comportamenos abusivos e usuários suspeitos. Na página de cada usúario, sendo ele pessoa física ou entidade (Ong), há um botão que abre uma área de texto que pode receber uma denúncia anônima sobre o perfil em questão. A denúncia atualmente fica salva em local storage.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t16-Time5-AdocaoPets/assets/124728653/2fa4fc34-a84a-4fe0-94eb-1809c806de90)
+
+####  Estrutura de dados:
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t16-Time5-AdocaoPets/assets/104398945/7e0c30db-5a4d-4c37-a38b-458541485cd7" width="600px">
+
+#### Instruções de acesso
+1. Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub;
+2. Descompacte o arquivo em uma pasta específica;
+3. Abra o Visual Studio Code e execute o Live Server;
+4. Abra um navegador de Internet e informe a seguinte URL:http://127.0.0.1:5500/AdocaoPets/create.html;
+
 ### RF-09 O Sistema deve permitir o compartilhamento  dos perfis para fora da plataforma
 
 O compartilhamento de perfis será feito via URL direta da página. Será possível também entrar em contato direto com o responsável pelo animal cadastrado usando o botão no canto inferior da tela como mostrado abaixo.
