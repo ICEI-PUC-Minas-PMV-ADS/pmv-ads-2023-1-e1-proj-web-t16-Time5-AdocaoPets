@@ -35,14 +35,12 @@ if (user) {
     // Caso o usuário não seja encontrado, faça o tratamento adequado
     console.log('Usuário não encontrado');
 }
-
-
-if (user.interesses_usuario.includes("Adotar pet") || user.interesses_usuario.includes("Apadrinhar pet")) {
-    var mostrarPet = document.getElementById('meus-pets');
-    mostrarPet.style.display = 'none';
-} else {
-    var mostrarPet = document.getElementById('meus-pets');
+console.log(user)
+var mostrarPet = document.getElementById('meus-pets');
+if (user.interesses_usuario.includes("Doar pet")) {
     mostrarPet.style.display = 'block';
+} else {
+    mostrarPet.style.display = 'none';
 }
 
 
