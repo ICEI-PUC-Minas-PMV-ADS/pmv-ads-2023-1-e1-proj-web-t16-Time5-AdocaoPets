@@ -36,7 +36,10 @@ if (user) {
     console.log('Usuário não encontrado');
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4ef68fe163c229f22ca324afc3f07939e4f9e48c
 var mostrarPet = document.getElementById('meus-pets');
 if (user.interesses_usuario.includes("Doar pet")) {
     mostrarPet.style.display = 'block';
@@ -127,6 +130,10 @@ function addPet() {
 
                 localStorage.setItem('formData', JSON.stringify(formData));
 
+<<<<<<< HEAD
+=======
+                //showPets();
+>>>>>>> 4ef68fe163c229f22ca324afc3f07939e4f9e48c
                 showPetsCard();
                 msgSuccess.setAttribute('style', 'display: block');
                 msgError.setAttribute('style', 'display: none');
@@ -134,10 +141,18 @@ function addPet() {
                 setTimeout(() => {
                     window.location.href = 'perfil_usuario.html';
                 }, 500);
+<<<<<<< HEAD
             };
             reader.readAsDataURL(imagemFile);
 
         }
+=======
+                
+            };
+
+            reader.readAsDataURL(imagemFile);
+        }         
+>>>>>>> 4ef68fe163c229f22ca324afc3f07939e4f9e48c
     }
 }
 
@@ -195,6 +210,7 @@ function showPetsCard() {
             const card = document.createElement('div');
             card.classList.add('col-md-2');
             card.innerHTML = `
+<<<<<<< HEAD
             <div class="row">
             <div class="col-md-4" style="text-align: -webkit-center">
               <img id="imagem_pet" src="${pet.imagem}" class="img-fluid" style="height: 200px; object-fit:cover" >
@@ -210,6 +226,16 @@ function showPetsCard() {
               
           </div>
                 
+=======
+                <div class="row">
+                    <img id="imagem_pet" src="${pet.imagem}" class="img-fluid">
+                    <span class="mt-2 badge text-bg-orange">${pet.nome}</span>
+                </div>
+                <div class="btn_petContainer">
+                    <td><button class="btn_pet" onclick="showPetProfile(${index})">Ver</button></td>
+                    <td><button class="btn_pet" onclick="deletePet(${index})">Excluir</button></td>
+                </div>
+>>>>>>> 4ef68fe163c229f22ca324afc3f07939e4f9e48c
             `;
 
             petsCard.appendChild(card);
