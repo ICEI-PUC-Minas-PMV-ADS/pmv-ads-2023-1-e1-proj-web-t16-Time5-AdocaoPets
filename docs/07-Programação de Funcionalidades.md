@@ -64,7 +64,7 @@ O sistema deve ser capaz de receber possíveis denúncias sobre comportamenos ab
 - perfil_pet.html <br>
 
 ####  Estrutura de dados:
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t16-Time5-AdocaoPets/assets/104398945/7e0c30db-5a4d-4c37-a38b-458541485cd7" width="600px">
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t16-Time5-AdocaoPets/assets/104398945/f80625cb-9555-48a7-a609-1895f9ff4465" width="600px">
 
 ####  Integrante responsável: <br>
 - Bruno Nogueira
