@@ -19,7 +19,7 @@
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container">
-      <a class="navbar-brand" href="#">AdoçãoPets</a>
+      <a class="navbar-brand" href="index.html">AdoçãoPets</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -32,16 +32,15 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Mensagens</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Conexões</a>
-          </li>
         </ul>
         <div class="dropdown">
           <button type="button" id="perfil" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="bi bi-person-circle"></i>
+            <i class="bi bi-person-circle"></i> Meu perfil
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Configurações</a></li>
+            <li><a class="dropdown-item" href="perfil_usuario.html">Ver perfil</a></li>
+            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#editarDadosPetModal"
+                onclick="fillPetData()">Editar perfil</a></li>
             <li><a class="dropdown-item" href="#">Sair</a></li>
           </ul>
         </div>
@@ -51,7 +50,7 @@
   <div class="container">
     <div class="row informacoes">
       <div class="col-md-2">
-        <img width="121" height="151" id="petImage" src="" class="" />
+        <img class="img-fluid" id="petImage" src="" class="" />
       </div>
       <div class="col-md-8">
         <h1 id="nome_pet">Nome pet</h1>
@@ -85,7 +84,6 @@
     <div class="row sobre-mim">
       <h1>
         Sobre mim
-        <i class="bi bi-pencil"></i>
       </h1>
       <p id="sobremim_pet">
         Garantir que o bichinho vá para um lar estruturado e não esteja mais
@@ -93,6 +91,98 @@
       </p>
     </div>
   </div>
+
+
+  <!-- Editar dados do pet -->
+  <!-- Modal -->
+  <div class="modal fade" id="editarDadosPetModal" tabindex="-1" aria-labelledby="editarDadosPetModal"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Editar Dados</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form class="form_cadastro_pet">
+          <div class="container_dados_pet">
+            <label for="nome">Nome:</label>
+            <input class="form-control" type="text" id="nome" name="nome" required /><br />
+
+            <label for="raca">Raça:</label>
+            <input class="form-control" type="text" id="raca" name="raca" required /><br />
+
+            <label for="local">Local:</label>
+            <input class="form-control" type="text" id="local" name="local" required /><br />
+
+            <label for="especie">Espécie:</label>
+            <select class="form-select" id="especie" name="especie" required>
+              <option value="">Selecione</option>
+              <option value="Cachorro">Cachorro</option>
+              <option value="Gato">Gato</option>
+            </select><br />
+
+            <label for="sexo">Sexo:</label>
+            <select class="form-select" id="sexo" name="sexo" required>
+              <option value="">Selecione</option>
+              <option value="Macho">Macho</option>
+              <option value="Fêmea">Fêmea</option>
+            </select><br />
+
+            <label for="porte">Porte:</label>
+            <select class="form-select" id="porte" name="porte" required>
+              <option value="">Selecione</option>
+              <option value="Pequeno">Pequeno</option>
+              <option value="Médio">Médio</option>
+              <option value="Grande">Grande</option>
+              <option value="Desconhecido">Desconhecido</option>
+            </select><br />
+
+            <label for="caracteristicas">Características:</label><br />
+            <input type="checkbox" id="amoroso" name="caracteristicas" value="Amoroso" />
+            <label for="amoroso">Amoroso</label><br />
+            <input type="checkbox" id="carismatico" name="caracteristicas" value="Carismático" />
+            <label for="carismatico">Carismático</label><br />
+            <input type="checkbox" id="comilao" name="caracteristicas" value="Comilão" />
+            <label for="comilao">Comilão</label><br /><br />
+
+            <label for="nome">Selecione a foto do pet:</label> <br />
+            <input type="file" id="petFile_editar" accept="image/*"><br /><br />
+
+            <label id="labelSobreMim" for="sobremim">Sobre mim:</label><br />
+            <textarea class="form-control" id="sobremim" class="label_sobremim"></textarea>
+          </div>
+
+          <!-- <label for="foto">Adicionar fotos:</label><br>
+                      <input type="file" id="foto" name="fotos" multiple>
+                      <br>
+
+                      <hr class="linha_divisoria"> -->
+
+          <br />
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Fechar
+            </button>
+            <button onclick="updatePetData()" type="button" id="Submit" class="btn btn-primary">
+              Salvar
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
   <a class="Whatsapp" href="https://web.whatsapp.com/send?phone=55985853138">
     <ion-icon name="logo-whatsapp"></ion-icon>
 

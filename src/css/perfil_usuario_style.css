@@ -70,7 +70,7 @@
 .container_Pets {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: end;
 }
 
 
@@ -126,7 +126,28 @@
 
 .form_cadastro_pet {
     background-color: var(--cor-de-fundo);
+    padding: 5px;
 }
+
+.container_caracteristicas>.btn {
+    background-color: var(--cor-de-fundo);
+    color: var(--azul-escuro);
+    border-color: var(--azul-escuro);
+    margin: 5px;
+}
+
+
+.container_caracteristicas {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.subtitulo_cadastro {
+    margin-right: 5px;
+}
+
+
 
 .titulo_cadastro_pet {
     padding: 1rem;
@@ -197,4 +218,23 @@ input::placeholder {
     color: var(--branco-escrita);
     text-decoration: none;
     border-color: var(--laranja);
+}
+
+
+.badge {
+    margin: 0 3px;
+}
+
+.badge_nomepet {
+    width: 100%;
+}
+
+
+.row {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.col-md-4 {
+    width: 100%;
 }

@@ -118,3 +118,13 @@
   position: relative;
   bottom: 0px;
 }
+
+
+.form_cadastro_pet {
+  background-color: var(--cor-de-fundo);
+  padding: 5px;
+}
+
+.badge {
+  margin: 0 3px;
+}

@@ -37,13 +37,13 @@ if (user) {
 }
 
 
-if (user.interesses_usuario.includes("Adotar pet") || user.interesses_usuario.includes("Apadrinhar pet")) {
-    var mostrarPet = document.getElementById('meus-pets');
-    mostrarPet.style.display = 'none';
-} else {
-    var mostrarPet = document.getElementById('meus-pets');
+var mostrarPet = document.getElementById('meus-pets');
+if (user.interesses_usuario.includes("Doar pet")) {
     mostrarPet.style.display = 'block';
+} else {
+    mostrarPet.style.display = 'none';
 }
+
 
 
 // Realiza o logout do usuário
@@ -105,48 +105,61 @@ function addPet() {
     } else {
 
         //Pega imagem do pet
-        let imagemInput = document.getElementById('imagem_usuario');
+        let imagemInput = document.getElementById('petFile');
         let imagemFile = imagemInput.files[0];
+        if (imagemFile) {
+            let reader = new FileReader();
+            reader.onload = function (event) {
+                let imagemDataUrl = event.target.result;
+                user.pets = user.pets || [];
 
+                user.pets.push({
+                    nome,
+                    raca,
+                    local,
+                    especie,
+                    sexo,
+                    porte,
+                    caracteristicas,
+                    sobremim,
+                    imagem: imagemDataUrl
+                });
 
-        user.pets = user.pets || [];
+                localStorage.setItem('formData', JSON.stringify(formData));
 
-        user.pets.push({
-            nome,
-            raca,
-            local,
-            especie,
-            sexo,
-            porte,
-            caracteristicas,
-            sobremim,
-            imagem: imagemFile
-        });
+                showPetsCard();
+                msgSuccess.setAttribute('style', 'display: block');
+                msgError.setAttribute('style', 'display: none');
 
-        localStorage.setItem('formData', JSON.stringify(formData));
+                setTimeout(() => {
+                    window.location.href = 'perfil_usuario.html';
+                }, 500);
+            };
+            reader.readAsDataURL(imagemFile);
 
-        showPets();
-        showPetsCard();
-        msgSuccess.setAttribute('style', 'display: block');
-        msgError.setAttribute('style', 'display: none');
-
-        setTimeout(() => {
-            window.location.href = 'perfil_usuario.html';
-        }, 500);
+        }
     }
 }
 
 
 
 function deletePet(index) {
-    const formData = JSON.parse(localStorage.getItem('formData')) || [];
-    const user = getUserData();
 
     if (user && user.pets) {
-        user.pets.splice(index, 1);
-        localStorage.setItem('formData', JSON.stringify(formData));
-        showPets();
-        showPetsCard();
+        // Exibir a confirmação ao usuário
+        const confirmDelete = confirm("Tem certeza de que deseja excluir este pet?");
+
+        if (confirmDelete) {
+            user.pets.splice(index, 1);
+            formData.forEach((data, i) => {
+                if (data.id === user.id) {
+                    formData[i] = user;
+                    return;
+                }
+            });
+            localStorage.setItem('formData', JSON.stringify(formData));
+            showPetsCard();
+        }
     }
 }
 
@@ -182,14 +195,21 @@ function showPetsCard() {
             const card = document.createElement('div');
             card.classList.add('col-md-2');
             card.innerHTML = `
-                <div class="row">
-                    <img id="imagem_pet" src="${pet.urlImagem}" class="img-fluid">
-                    <span class="mt-2 badge text-bg-orange">${pet.nome}</span>
-                </div>
-                <div class="btn_petContainer">
-                    <td><button class="btn_pet" onclick="showPetProfile(${index})">Ver</button></td>
-                    <td><button class="btn_pet" onclick="deletePet(${index})">Excluir</button></td>
-                </div>
+            <div class="row">
+            <div class="col-md-4" style="text-align: -webkit-center">
+              <img id="imagem_pet" src="${pet.imagem}" class="img-fluid" style="height: 200px; object-fit:cover" >
+            </div>
+            <div class="d-flex">
+              <span class="mt-2 badge text-bg-orange" style="width:100%">${pet.nome}</span>
+            </div>
+
+              <div class="d-flex">
+                <td><button class="btn_pet" onclick="showPetProfile(${index})">Ver</button></td>
+                <td><button class="btn_pet" onclick="deletePet(${index})">Excluir</button></td>
+              </div>
+              
+          </div>
+                
             `;
 
             petsCard.appendChild(card);
@@ -218,3 +238,97 @@ function showPetProfile(index) {
 showPetsCard();
 
 
+//Mostra os dados do usuario ao clicar em "Editar perfil"
+function fillUserData() {
+
+
+    // Verifica se o usuário foi encontrado
+    if (user) {
+        document.getElementById('nome_usuario_editar').value = user.nome_usuario;
+        document.getElementById('email_usuario').value = user.email_usuario;
+        document.getElementById('senha_usuario').value = user.pwd_usuario;
+        document.getElementById('local_usuario_editar').value = user.local_usuario;
+        document.getElementById('celular_usuario').value = user.celular_usuario;
+        document.getElementById('sobre_usuario_editar').value = user.sobre_usuario;
+        document.querySelectorAll('input[type="checkbox"]:checked');
+
+
+    } else {
+        console.log('Usuário não encontrado');
+    }
+}
+
+
+
+// Função para atualizar os dados do usuário
+function updateUserData() {
+    // Capturar os novos valores dos campos de entrada
+    const nome = document.getElementById('nome_usuario_editar').value;
+    const email = document.getElementById('email_usuario').value;
+    const senha = document.getElementById('senha_usuario').value;
+    const local = document.getElementById('local_usuario_editar').value;
+    const celular = document.getElementById('celular_usuario').value;
+    const sobre = document.getElementById('sobre_usuario_editar').value;
+
+    let interesses_usuario = document.querySelectorAll('input[type="checkbox"]:checked');
+    let checkboxValues = Array.from(interesses_usuario).map(interesses_usuario => interesses_usuario.value);
+
+
+    // Atualizar os valores do objeto user
+    user.nome_usuario = nome;
+    user.email_usuario = email;
+    user.pwd_usuario = senha;
+    user.local_usuario = local;
+    user.celular_usuario = celular;
+    user.sobre_usuario = sobre;
+    user.interesses_usuario = checkboxValues;
+
+    //Pega imagem do usuario
+    let imagemInput = document.getElementById('imagem_usuario_editar');
+    let imagemFile = imagemInput.files[0];
+
+    if (imagemFile) {
+        let reader = new FileReader();
+        reader.onload = function (event) {
+            let imagemDataUrl = event.target.result;
+
+            user.imagem_usuario = imagemDataUrl;
+
+            // Atualizar os dados no localStorage
+            const formData = JSON.parse(localStorage.getItem('formData')) || [];
+            const index = formData.findIndex((u) => u.id === user.id);
+            if (index !== -1) {
+                formData[index] = user;
+                localStorage.setItem('formData', JSON.stringify(formData));
+                console.log('Dados do usuário atualizados com sucesso!');
+
+                // Exibir a imagem do usuário
+                const imagemUsuarioPerfil = document.getElementById('imagem_usuario');
+                imagemUsuarioPerfil.src = user.imagem_usuario;
+
+                window.location.href = 'perfil_usuario.html';
+            } else {
+                console.log('Usuário não encontrado no localStorage.');
+            }
+        };
+
+        reader.readAsDataURL(imagemFile);
+    } else {
+        // Atualizar os dados no localStorage
+        const formData = JSON.parse(localStorage.getItem('formData')) || [];
+        const index = formData.findIndex((u) => u.id === user.id);
+        if (index !== -1) {
+            formData[index] = user;
+            localStorage.setItem('formData', JSON.stringify(formData));
+            console.log('Dados do usuário atualizados com sucesso!');
+        } else {
+            console.log('Usuário não encontrado no localStorage.');
+        }
+
+        // Exibir a imagem do usuário
+        const imagemUsuarioPerfil = document.getElementById('imagem_usuario');
+        imagemUsuarioPerfil.src = user.imagem_usuario;
+
+        window.location.href = 'perfil_usuario.html';
+    }
+}

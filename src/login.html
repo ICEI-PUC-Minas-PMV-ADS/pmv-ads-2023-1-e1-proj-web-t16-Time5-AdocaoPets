@@ -18,9 +18,7 @@
     <!--Menu de navegação-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="./img/Facebook.png" alt="Bootstrap" width="30" height="24">
-            </a>
+            <a class="navbar-brand" href="index.html">AdoçãoPets</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -41,24 +39,24 @@
         </div>
     </nav>
 
-    <div class="d-flex p-2 flex-column justify-content-center" style="background-color: #FFFAF5; width: 50%;">
-        <form style="background-color: #FF5B2E; padding: 30px;" role="form" onsubmit="signIn(event);"
-            autocomplete="off">
-            <h1>Login</h1>
-            <div class="mb-3">
-                <label for="email_usuario" class="form-label">Email:</label>
-                <input type="email" class="form-control" id="email_usuario" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
-                <label for="senha_usuario" class="form-label">Senha:</label>
-                <input type="password" class="form-control" id="senha_usuario">
-            </div>
-            <button type="submit" class="btn btn-primary">Login</button>
-        </form>
-        <p>Não tem cadastro? <a href="tipo-cadastro.html">Cadastre-se</a></p>
-
+    <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <div class="d-flex p-2 flex-column justify-content-center" style="width: 50%;">
+            <form style="background-color: #FF5B2E; padding: 30px; color: #000958; border-radius: 10px;" role="form"
+                onsubmit="signIn(event);" autocomplete="off">
+                <h1>Login</h1>
+                <div class="mb-3">
+                    <label for="email_usuario" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="email_usuario" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="senha_usuario" class="form-label">Senha:</label>
+                    <input type="password" class="form-control" id="senha_usuario">
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+            <p class="text-center">Não tem cadastro? <a href="tipo-cadastro.html">Cadastre-se</a></p>
+        </div>
     </div>
-
 
 
 

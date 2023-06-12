@@ -36,7 +36,10 @@
             <i class="bi bi-person-circle"></i> Meu perfil
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Editar perfil</a></li>
+            <li><a class="dropdown-item" href="perfil_usuario.html">Ver perfil</a></li>
+            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#editarDadosUserModal"
+                onclick="fillUserData()">Editar
+                perfil</a></li>
             <li><a class="dropdown-item" id="btn-logout" href="#">Sair</a></li>
           </ul>
         </div>
@@ -46,7 +49,7 @@
   <div class="container">
     <div class="row informacoes">
       <div class="col-md-2">
-        <img id="imagem_usuario" src="" class="img-fluid" style="max-width: 200px;" />
+        <img id="imagem_usuario" src="" class="img-fluid" style="width: 200px; height: 200px; object-fit:cover" />
       </div>
       <div class="col-md-8">
         <h1 id="nome_usuario"></h1>
@@ -63,7 +66,6 @@
     <div class="row sobre-mim">
       <h1>
         Sobre mim
-        <i class="bi bi-pencil"></i>
       </h1>
       <p id="sobre_usuario">
 
@@ -73,7 +75,6 @@
     <div class="row meus-pets" id="meus-pets">
       <h1>
         Meus pets
-        <i class="bi bi-pencil"></i>
       </h1>
 
       <!-- <table class="table table-striped table-hover">
@@ -104,11 +105,120 @@
           </div>
         </div> -->
       </div>
-      <div class="col-md-2 text-center adicionar">
+      <div class="col-md-4 text-center adicionar">
         <i class="bi bi-plus-circle-fill icone" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
       </div>
     </div>
   </div>
+
+
+  <!-- Editar dados do usuario -->
+  <!-- Modal -->
+  <div class="modal fade" id="editarDadosUserModal" tabindex="-1" aria-labelledby="editarDadosUserModal"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Editar Dados</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form class="form_cadastro_pet">
+          <div class="container_dados_pet">
+            <label for="nome_usuario_editar">Nome:</label>
+            <input class="form-control" type="text" id="nome_usuario_editar" name="nome_usuario_editar" /><br />
+
+            <label for="email_usuario">E-mail:</label>
+            <input class="form-control" type="email" id="email_usuario" name="email_usuario" /><br />
+
+            <label for="senha_usuario">Senha:</label>
+            <input class="form-control" type="password" id="senha_usuario" name="senha_usuario" /><br />
+
+            <label for="local_usuario_editar">Cidade:</label>
+            <input class="form-control" type="email" id="local_usuario_editar" name="local_usuario_editar" /><br />
+
+            <label for="celular_usuario">Celular:</label>
+            <input class="form-control" type="tel" id="celular_usuario" name="celular_usuario" /><br />
+            <div class="btn-group container_caracteristicas" role="group"
+              aria-label="Basic checkbox toggle button group">
+              <label class="subtitulo_cadastro" for="especie">Espécie:</label><br />
+              <input type="checkbox" class="btn-check" id="Cachorro" name="especie" value="Cachorro" />
+              <label for="Cachorro" class="btn btn-outline-primary">Cachorro</label><br />
+              <input type="checkbox" class="btn-check" id="Gato" name="especie" value="Gato" />
+              <label for="Gato" class="btn btn-outline-primary">Gato</label><br />
+
+            </div><br />
+
+            <div class="btn-group container_caracteristicas" role="group"
+              aria-label="Basic checkbox toggle button group">
+              <label class="subtitulo_cadastro" for="sexo">Sexo do Pet:</label><br />
+              <input type="checkbox" class="btn-check" id="Macho" name="sexo" value="Macho" />
+              <label for="Macho" class="btn btn-outline-primary">Macho</label><br />
+              <input type="checkbox" class="btn-check" id="Fêmea" name="sexo" value="Fêmea" />
+              <label for="Fêmea" class="btn btn-outline-primary">Fêmea</label><br />
+            </div><br />
+
+            <div class="btn-group container_caracteristicas" role="group"
+              aria-label="Basic checkbox toggle button group">
+              <label class="subtitulo_cadastro" for="porte">Porte do Pet:</label><br />
+              <input type="checkbox" class="btn-check" id="Pequeno" name="porte" value="Pequeno" />
+              <label for="Pequeno" class="btn btn-outline-primary">Pequeno</label><br />
+              <input type="checkbox" class="btn-check" id="Médio" name="porte" value="Médio" />
+              <label for="Médio" class="btn btn-outline-primary">Médio</label><br />
+              <input type="checkbox" class="btn-check" id="Grande" name="porte" value="Grande" />
+              <label for="Grande" class="btn btn-outline-primary">Grande</label><br />
+            </div><br />
+
+            <label for="caracteristicas">Características:</label><br />
+            <input type="checkbox" id="amoroso" name="caracteristicas" value="Amoroso" />
+            <label for="amoroso">Amoroso</label><br />
+            <input type="checkbox" id="carismatico" name="caracteristicas" value="Carismático" />
+            <label for="carismatico">Carismático</label><br />
+            <input type="checkbox" id="comilao" name="caracteristicas" value="Comilão" />
+            <label for="comilao">Comilão</label><br /><br />
+
+            <div class="btn-group container_caracteristicas" role="group"
+              aria-label="Basic checkbox toggle button group">
+              <label class="subtitulo_cadastro" for="interesses">Interesses:</label><br />
+              <input type="checkbox" class="btn-check" id="adotar_pet" name="Adotar pet" value="Adotar pet" />
+              <label for="adotar_pet" class="btn btn-outline-primary">Adotar pet</label><br />
+              <input type="checkbox" class="btn-check" id="doar_pet" name="Doar pet" value="Doar pet" />
+              <label for="doar_pet" class="btn btn-outline-primary">Doar pet</label><br />
+              <input type="checkbox" class="btn-check" id="apadrinhar_pet" name="Apadrinhar pet" value="Apadrinhar" />
+              <label for="apadrinhar_pet" class="btn btn-outline-primary">Apadrinhar</label><br />
+            </div><br />
+
+            <div class="input-group input_cadastro">
+              <label for="imagem_usuario_editar" class="subtitulo_cadastro">Escolha sua foto:</label>
+              <input class="form-control" type="file" id="imagem_usuario_editar">
+            </div><br />
+
+            <label id="sobre_usuario" for="sobre_usuario">Sobre mim:</label><br />
+            <textarea class="form-control" id="sobre_usuario_editar" class="label_sobremim"></textarea>
+          </div>
+
+          <!-- <label for="foto">Adicionar fotos:</label><br>
+                        <input type="file" id="foto" name="fotos" multiple>
+                        <br>
+
+                        <hr class="linha_divisoria"> -->
+
+          <br />
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Fechar
+            </button>
+            <button onclick="updateUserData()" type="button" id="Submit" class="btn btn-primary">
+              Salvar
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
   <!-- Cadastrar pet -->
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -140,7 +250,7 @@
               <input class="form-control" type="text" id="local" name="local" required /><br />
 
               <label for="especie">Espécie:</label>
-              <select class="form-select" id="especie" name="sexo" required>
+              <select class="form-select" id="especie" name="especie" required>
                 <option value="">Selecione</option>
                 <option value="Cachorro">Cachorro</option>
                 <option value="Gato">Gato</option>
