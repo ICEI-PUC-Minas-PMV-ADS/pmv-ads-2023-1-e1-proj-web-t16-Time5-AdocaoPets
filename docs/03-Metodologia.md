@@ -133,14 +133,17 @@ Links: <br>
 
 ##### 3.4.2 Execução:
 
-| Tarefa | Responsável | Data de entrega | 
-| ------------- | ------------- | ------------- | 
-| --  | -- | -- |
-| -- | -- | -- |
+| Tarefa | Responsável | 
+| ------------- | ------------- | 
+| Homepage e cadastro de pet | Bárbara Sena | 
+| Cadastro de usuario | Rafael Teixeira | 
+| Função de reportar usuário | Bruno Nogueira | 
+| | Lucas Ayala | 
+| | Andreia Moura | 
 
 ##### 3.4.3 Evidências:
 
-
+`Template do Site:`
 
 #### 3.5 Sprint 4:
 
@@ -158,11 +161,17 @@ Links: <br>
 
 | Tarefa | Responsável | 
 | ------------- | ------------- | 
-| --  | -- |
-| -- | -- |
+| Página Perfil Usuário e Perfil Pet  | Bárbara Sena |
+| Página explorar | Lucas Ayala |
+| Função reportar | Bruno Nogueira |
+| Avaliar usuário | Andreia Moura |
+| Cadastro de ONG e Usuário | Rafael Teixeira |
 
 ##### 3.5.3 Evidências:
 
+`Programação de Funcionalidades` <br> 
+`Plano de Testes de Software` <br>
+`Registro de Testes de Software`
 
 #### 3.6 Sprint 5:
 
