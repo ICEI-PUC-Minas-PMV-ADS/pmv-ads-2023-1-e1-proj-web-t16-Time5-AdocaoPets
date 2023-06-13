@@ -1,3 +1,16 @@
+document.querySelector('form').addEventListener('submit', function (event) {
+    event.preventDefault(); // Impede o envio do formulário padrão
+
+    // Obtenha o valor selecionado no campo de seleção
+    let selectValue = document.getElementById('Select').value;
+
+    // Verifique o valor selecionado e redirecione para a página apropriada
+    if (selectValue === 'Pessoa física') {
+        window.location.href = 'cadastro-pessoa-fisica.html';
+    } else if (selectValue === 'ONG') {
+        window.location.href = 'cadastro-ong.html';
+    }
+});
 
 const signUp = e => {
     e.preventDefault();
