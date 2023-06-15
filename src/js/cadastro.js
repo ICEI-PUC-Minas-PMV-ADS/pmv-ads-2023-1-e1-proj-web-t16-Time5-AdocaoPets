@@ -8,7 +8,7 @@ document.querySelector('form').addEventListener('submit', function (event) {
     if (selectValue === 'Pessoa física') {
         window.location.href = 'cadastro-pessoa-fisica.html';
     } else if (selectValue === 'ONG') {
-        window.location.href = 'cadastro-ong.html';
+        window.location.href = 'cadastro_ong.html';
     }
 });
 

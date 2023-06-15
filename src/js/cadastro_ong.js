@@ -32,8 +32,8 @@ const signUp = e => {
             reader.onload = function (event) {
                 let imagemDataUrl = event.target.result;
 
-                formDataOng.push({ id: newIdOng, nome_ong, email_ong, pwd_usuario, cep_ong, telefone_ong, sobre_ong , imagem_ong: imagemDataUrl});
-                localStorage.setItem('formData', JSON.stringify(formData));
+                formDataOng.push({ id: newIdOng, nome_ong, email_ong, pwd_ong, cep_ong, telefone_ong, sobre_ong , imagem_ong: imagemDataUrl});
+                localStorage.setItem('formDataOng', JSON.stringify(formDataOng));
                 document.querySelector('form').reset();
                 document.getElementById('nome_ong').focus();
                 window.location.href = 'login.html';
@@ -55,6 +55,7 @@ const signUp = e => {
             localStorage.setItem('formDataOng', JSON.stringify(formDataOng));
             document.querySelector('form').reset();
             document.getElementById('nome_ong').focus();
+            alert("Ong cadastrada com sucesso!");
             window.location.href = 'login.html';
         }
     } else {
