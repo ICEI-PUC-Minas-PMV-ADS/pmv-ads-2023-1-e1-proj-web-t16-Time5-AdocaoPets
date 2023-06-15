@@ -46,11 +46,17 @@
                 <h1>Login</h1>
                 <div class="mb-3">
                     <label for="email_usuario" class="form-label">Email:</label>
-                    <input type="email" class="form-control" id="email_usuario" aria-describedby="emailHelp">
+                    <input type="email" class="form-control" id="email_usuario" aria-describedby="emailHelp" required>
                 </div>
                 <div class="mb-3">
                     <label for="senha_usuario" class="form-label">Senha:</label>
-                    <input type="password" class="form-control" id="senha_usuario">
+                    <input type="password" class="form-control" id="senha_usuario" required>
+                    <input
+                    type="checkbox"
+                    id="isOng"
+                    name="isOngcheck"
+                    value="true" />
+                  <label for="isOng">Ong?</label>
                 </div>
                 <button type="submit" class="btn btn-primary">Login</button>
             </form>
