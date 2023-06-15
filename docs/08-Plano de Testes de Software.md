@@ -1,5 +1,29 @@
 # Plano de Testes de Software
 
+Existem 4 tipos de testes possíveis para uma aplicação web, são eles:
+
+- Teste de navegabilidade
+- Teste de resposividade
+- Teste de campos de páginas
+- Teste de ponta a ponta
+
+- Teste de navegabilidade:
+
+  Verificam se todos os links são navegáveis, estão corretos e levam a outras páginas existentes na aplicação.
+
+- Teste de responsividade:
+  
+  Verificam se a aplicação pode ser utilizada em dispositivos móveis.
+
+- Teste de campos de páginas
+
+ Verificam se a página faz validação em seus campos de entrada.
+
+- Teste de ponta a ponta:
+
+ Verificam a aplicação completa de uma funcionalidade do sistema, do início ao fim.
+  
+
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>
 
 Apresente os cenários de testes utilizados na realização dos testes da sua aplicação. Escolha cenários de testes que demonstrem os requisitos sendo satisfeitos.
