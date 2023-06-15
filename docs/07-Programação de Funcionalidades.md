@@ -53,7 +53,7 @@ O sistema deve mostrar o perfil das Ongs cadastradas, o cadastro é feito pela p
 
 O sistema deve ser capaz de receber possíveis denúncias sobre comportamenos abusivos e usuários suspeitos. Na página de cada usúario, sendo ele pessoa física ou entidade (Ong), há um botão que abre uma área de texto que pode receber uma denúncia anônima sobre o perfil em questão. A denúncia atualmente fica salva em local storage.
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t16-Time5-AdocaoPets/assets/124728653/2fa4fc34-a84a-4fe0-94eb-1809c806de90)
+![report](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t16-Time5-AdocaoPets/assets/75049187/0b75a8f1-f54f-4bb0-832c-d4fbad08868f)
 
 #### Requisitos atendidos: <br>
 - RF-08
