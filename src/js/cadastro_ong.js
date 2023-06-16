@@ -9,10 +9,10 @@ const signUp = e => {
     let sobre_ong = document.getElementById('sobre_ong').value;
 
 
-    let formDataOng = JSON.parse(localStorage.getItem('formDataOng')) || [];
+    let formData = JSON.parse(localStorage.getItem('formData')) || [];
 
-    let exist = formDataOng.length &&
-        formDataOng.some(data =>
+    let exist = formData.length &&
+        formData.some(data =>
             data.nome_ong &&
             data.email_ong &&
             data.nome_ong.toLowerCase() === nome_ong.toLowerCase() &&
@@ -20,7 +20,7 @@ const signUp = e => {
         );
 
     if (!exist) {
-        let newIdOng = formDataOng.length + 1; // Gera um novo ID para o usuário
+        let newIdOng = formData.length + 1; // Gera um novo ID para o usuário
 
 
         //Pega imagem do usuario
@@ -32,7 +32,7 @@ const signUp = e => {
             reader.onload = function (event) {
                 let imagemDataUrl = event.target.result;
 
-                formDataOng.push({ id: newIdOng, nome_ong, email_ong, pwd_usuario, cep_ong, telefone_ong, sobre_ong , imagem_ong: imagemDataUrl});
+                formData.push({ id: newIdOng, nome_ong, email_ong, pwd_usuario, cep_ong, telefone_ong, sobre_ong , imagem_ong: imagemDataUrl});
                 localStorage.setItem('formData', JSON.stringify(formData));
                 document.querySelector('form').reset();
                 document.getElementById('nome_ong').focus();
@@ -42,17 +42,18 @@ const signUp = e => {
             reader.readAsDataURL(imagemFile);
 
         } else {
-            formDataOng.push({
+            formData.push({
                 id: newIdOng,
-                nome_ong,
-                email_ong,
-                pwd_ong,
-                cep_ong,
-                telefone_ong,
-                sobre_ong,
+                    type:'Ong',
+                    nome_ong,
+                    email_ong,
+                    pwd_ong,
+                    cep_ong,
+                    telefone_ong,
+                    sobre_ong,
             });
 
-            localStorage.setItem('formDataOng', JSON.stringify(formDataOng));
+            localStorage.setItem('formData', JSON.stringify(formData));
             document.querySelector('form').reset();
             document.getElementById('nome_ong').focus();
             window.location.href = 'login.html';
