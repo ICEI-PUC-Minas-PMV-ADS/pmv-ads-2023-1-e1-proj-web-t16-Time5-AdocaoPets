@@ -1,29 +1,48 @@
+:root {
+    --cor-de-fundo: #FFFAF5;
+    --azul-escuro: #000958;
+    --branco-escrita: #FEFEFE;
+    --fonte-principal: "Poppins";
+    --laranja: #FF5B2E;
+    --azul-claro: #61BCE3;
+}
+
 body {
-    background-color: #FFFAF5;
-    font-family: "Poppins";
-    font-size: 14px;
+    background-color: var(--laranja);
+
 }
 
 .titulo_cadastro {
-    font-size: 24px;
-    text-align: center;
+    font-size: 18px;
     padding: 10px;
     color: #000958;
 }
 
 .form_cadastro {
-    /* width: 40%; */
-    background-color: #FF5B2E;
+    background-color: var(--branco-escrita);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 90%;
+    padding: 30px;
+
 }
 
 .input_cadastro {
-    width: 90%;
+    width: 40%;
+    height: 44px;
     border-radius: 10px;
-    border: none;
+    border: 1px solid #d9d3cc;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+
+.input_dados {
+    height: 44px;
+    border-radius: 10px;
+    border: 1px solid #d9d3cc;
     padding: 5px;
     margin-left: 10px;
 }
@@ -40,7 +59,6 @@ body {
 
 .container_caracteristicas {
     display: flex;
-    width: 70%;
     align-items: center;
     margin: 5px 0;
     margin-left: 10px;
@@ -52,8 +70,71 @@ body {
 }
 
 .container_caracteristicas>.btn {
-    background-color: var(--cor-de-fundo);
+    background-color: var(--branco-escrita);
     color: var(--azul-escuro);
     border-color: var(--azul-escuro);
     margin: 5px;
+}
+
+
+
+
+.container_dados {
+    display: flex;
+    max-width: 600px;
+    flex-wrap: wrap;
+    column-gap: 10px;
+}
+
+.linha_div {
+    color: var(--azul-escuro);
+    margin: 5px 0;
+
+}
+
+.d-flex {
+    margin: 30px;
+    column-gap: 10px;
+}
+
+.text-center {
+    margin-top: 10px;
+    color: var(--branco-escrita);
+    text-align: center;
+}
+
+.text-link {
+    font-weight: 600;
+    color: var(--azul-escuro);
+}
+
+.btn-primary {
+    background-color: var(--laranja);
+    border-color: var(--laranja);
+    color: var(--branco-escrita);
+
+}
+
+.btn-primary:hover {
+    background-color: var(--azul-claro);
+    border-color: var(--azul-claro);
+    color: var(--branco-escrita);
+}
+
+.container_form {
+    display: flex;
+    flex-direction: row;
+}
+
+.sobre_usuario {
+    width: 100%;
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    background-color: var(--azul-claro);
+    border-color: var(--azul-claro);
 }

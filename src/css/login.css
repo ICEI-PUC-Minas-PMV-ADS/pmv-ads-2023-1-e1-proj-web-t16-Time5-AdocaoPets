@@ -1,0 +1,49 @@
+:root {
+    --cor-de-fundo: #FFFAF5;
+    --azul-escuro: #000958;
+    --branco-escrita: #FEFEFE;
+    --fonte-principal: "Poppins";
+    --laranja: #FF5B2E;
+    --azul-claro: #61BCE3;
+}
+
+body {
+    background-color: var(--laranja);
+    overflow: hidden;
+}
+
+
+.btn-primary {
+    background-color: var(--laranja);
+    border-color: var(--laranja);
+    color: var(--branco-escrita);
+}
+
+.btn-primary:hover {
+    background-color: var(--azul-claro);
+    border-color: var(--azul-claro);
+    color: var(--branco-escrita);
+}
+
+.form_login {
+    background-color: #FEFEFE;
+    padding: 30px;
+    color: #000958;
+    border-radius: 10px;
+}
+
+.text-center {
+    margin-top: 10px;
+    color: var(--branco-escrita);
+}
+
+.text-link {
+    font-weight: 600;
+    color: var(--azul-escuro);
+}
+
+.d-flex {
+    min-width: 320px;
+    height: 100vh;
+    scroll-behavior: smooth;
+}

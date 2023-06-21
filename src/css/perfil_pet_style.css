@@ -1,3 +1,12 @@
+:root {
+  --cor-de-fundo: #FFFAF5;
+  --azul-escuro: #000958;
+  --branco-escrita: #FEFEFE;
+  --fonte-principal: "Poppins";
+  --laranja: #FF5B2E;
+  --azul-claro: #61BCE3;
+}
+
 #perfil {
   border: none;
   background: none;
@@ -86,39 +95,24 @@
   flex-basis: 20%;
 }
 
-
 .Whatsapp {
-  position: Fixed;
-  display: flex;
-  width: 60px;
-  height: 60px;
-  bottom: 40px;
-  right: 40px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
   background-color: #25d366;
   color: #fff;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 30px;
-  box-shadow: 1px 1px 2px #888;
-  z-index: 1000;
-  flex-direction: row;
-  align-content: stretch;
-  justify-content: center;
-  align-items: center;
-}
-
-.container_footer {
-  background-color: #61bce3;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 3rem;
-  margin-top: 3rem;
-  position: relative;
-  bottom: 0px;
+  justify-content: center;
+  font-size: 24px;
+  text-decoration: none;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s ease;
 }
-
 
 .form_cadastro_pet {
   background-color: var(--cor-de-fundo);
@@ -127,4 +121,29 @@
 
 .badge {
   margin: 0 3px;
+}
+
+/* Footer  */
+
+.container_rodape {
+  background-color: var(--azul-claro);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.rede_social_link {
+  text-decoration: none;
+}
+
+
+.texto_footer {
+  font-size: 12px;
+  margin-top: 1rem;
+  color: var(--branco-escrita);
 }

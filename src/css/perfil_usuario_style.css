@@ -34,15 +34,15 @@
     font-size: 20px;
 }
 
-.meus-pets .adicionar {
+/* .meus-pets .adicionar {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
 .meus-pets .adicionar .icone {
     font-size: 40px;
-    margin-bottom: 38px;
+    margin: 0 10px;
     color: #FF5B2E;
 }
 
@@ -235,6 +235,38 @@ input::placeholder {
     align-items: center;
 }
 
+.row_pet {
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 282px;
+
+}
+
+
 .col-md-4 {
     width: 100%;
+}
+
+
+
+/* Footer  */
+
+.container_rodape {
+    background-color: var(--azul-claro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.rede_social_link {
+    text-decoration: none;
+}
+
+
+.texto_footer {
+    font-size: 12px;
+    margin-top: 1rem;
+    color: var(--branco-escrita);
 }

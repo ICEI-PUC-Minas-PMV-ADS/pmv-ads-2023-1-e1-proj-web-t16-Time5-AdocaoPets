@@ -169,27 +169,6 @@ function deletePet(index) {
     }
 }
 
-// function showPets() {
-//     // const user = getUserData();
-
-//     // if (user && user.pets) {
-//     //     const html = user.pets.map((pet, index) => `
-//     //         <tr>
-//     //             <td>${pet.nome}</td>
-//     //             <td>${pet.raca}</td>
-//     //             <td>${pet.local}</td>
-//     //             <td>${pet.especie}</td>
-//     //             <td>${pet.sexo}</td>
-//     //             <td>${pet.porte}</td>
-//     //             <td>${pet.caracteristicas}</td>
-//     //             <td>${pet.sobremim}</td>
-//     //             <td><button class="btn btn-danger" onclick="deletePet(${index})">Excluir</button></td>
-//     //         </tr>
-//     //     `).join('');
-
-//     //     document.getElementById('pets-table-body').innerHTML = html;
-//     // }
-// }
 
 function showPetsCard() {
     const user = getUserData();
@@ -201,7 +180,7 @@ function showPetsCard() {
             const card = document.createElement('div');
             card.classList.add('col-md-2');
             card.innerHTML = `
-            <div class="row">
+            <div class="row_pet">
             <div class="col-md-4" style="text-align: -webkit-center">
               <img id="imagem_pet" src="${pet.imagem}" class="img-fluid" style="height: 200px; object-fit:cover" >
             </div>
@@ -210,8 +189,8 @@ function showPetsCard() {
             </div>
 
               <div class="d-flex">
-                <td><button class="btn_pet" onclick="showPetProfile(${index})">Ver</button></td>
-                <td><button class="btn_pet" onclick="deletePet(${index})">Excluir</button></td>
+                <td><button class="btn_pet btn btn-primary" onclick="showPetProfile(${index})">Ver</button></td>
+                <td><button class="btn_pet btn btn-primary" onclick="deletePet(${index})">Excluir</button></td>
               </div>
               
           </div>
@@ -339,3 +318,5 @@ function updateUserData() {
         window.location.href = 'perfil_usuario.html';
     }
 }
+
+
