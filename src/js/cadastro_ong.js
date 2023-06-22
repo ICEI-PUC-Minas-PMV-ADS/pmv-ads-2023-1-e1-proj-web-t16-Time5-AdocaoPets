@@ -32,7 +32,7 @@ const signUp = e => {
             reader.onload = function (event) {
                 let imagemDataUrl = event.target.result;
 
-                formData.push({ id: newIdOng, nome_ong, email_ong, pwd_usuario, cep_ong, telefone_ong, sobre_ong , imagem_ong: imagemDataUrl});
+                formData.push({ id: newIdOng, nome_ong, email_ong, pwd_ong, cep_ong, telefone_ong, sobre_ong , imagem_ong: imagemDataUrl});
                 localStorage.setItem('formData', JSON.stringify(formData));
                 document.querySelector('form').reset();
                 document.getElementById('nome_ong').focus();
