@@ -58,9 +58,9 @@ A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade
 |RF-02| O sistema deve oferecer cadastro de gatos e cachorros | Alta |
 |RF-03| O sistema deve oferecer solicitação de adoção de gatos e cachorros para os usuários | Alta |
 |RF-04| O sistema deve manter o histórico de adoções de gatos e cachorros que já foram adotados para futuros relatórios | Alta |
-|RF-05| O sistema deve notificar aos usuários novos cadastros de gatos e cachorros de acordo com o perfil desejado. | Média |
+|RF-05| O sistema deve listar gatos e cachorros de acordo com o perfil desejado pelo usuário. | Média |
 |RF-06| O sistemas deve oferecer cadastro de ONGs parceiras  | Alta |
-|RF-07| O sistema deve permitir ao usuário doador avaliar o usuário que adotou após a conclusão da doação e vice-versa | Alta |
+|RF-07| O sistema deve permitir ao usuário doador avaliar usuários | Alta |
 |RF-08| O sistema deve permitir que usuários denunciem comportamentos abusivos, perfis falsos ou quaisquer ações que ponham a segurança do usuário em risco | Alta |
 |RF-09| O sistema deve permitir o compartilhamento dos perfis para fora da plataforma | Média |
 
