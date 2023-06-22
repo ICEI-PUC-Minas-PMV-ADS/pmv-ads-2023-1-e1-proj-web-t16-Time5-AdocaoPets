@@ -161,11 +161,11 @@ Links: <br>
 
 | Tarefa | Responsável | 
 | ------------- | ------------- | 
-| Página Perfil Usuário e Perfil Pet  | Bárbara Sena |
+| Cadastro de usuário, Página Perfil Usuário, Perfil Pet  | Bárbara Sena |
 | Página explorar | Lucas Ayala |
 | Função reportar | Bruno Nogueira |
 | Avaliar usuário | Andreia Moura |
-| Cadastro de ONG e Usuário | Rafael Teixeira |
+| Cadastro de ONG | Rafael Teixeira |
 
 ##### 3.5.3 Evidências:
 
