@@ -11,6 +11,9 @@
 | Passo 2  | Preencher os campos | 
 | Passo 3  | Clicar no botão "Cadastrar" | 
 | Critérios de Êxito | O usuário é redirecionado para a página de login |
+| Responsável | Bárbara Sena |
+
+<br>
 
 ## Tela de Cadastro Usuário / Sem sucesso
 | Caso de teste | CT-01 - Cadastro de usuário | 
@@ -21,6 +24,7 @@
 | Passo 2  | Preencher os campos | 
 | Passo 3  | Clicar no botão "Cadastrar" | 
 | Critérios de Êxito | O usuário recebe um alert de erro ou um alert de que já existe um cadastro com esse e-mail |
+| Responsável | Bárbara Sena |
 
 ## Tela de Cadastro de pets
 | Caso de teste | CT-02 - Cadastro de pets | 
@@ -32,6 +36,9 @@
 | Passo 3  | Preencher os campos |
 | Passo 4  | Clicar em "cadastrar" | 
 | Critérios de Êxito | O pet é adicionado a seção de "meus pets" |
+| Responsável | Bárbara Sena |
+
+<br>
 
 ## Tela de Cadastro de pets / Sem sucesso
 | Caso de teste | CT-02 - Cadastro de pets | 
@@ -43,23 +50,33 @@
 | Passo 3  | Preencher alguns campos |
 | Passo 4  | Clicar em "cadastrar" | 
 | Critérios de Êxito | O usuário recebe um alert para preencher todos os campos ao adicionar pet  |
+| Responsável | Bárbara Sena |
+
+<br>
+
 
 ## Tela de Login
 | Caso de teste | CT-01 - Cadastro de usuário | 
 | ------------- | ------------- |
 | Requisitos Associados	| RF-01	O sistema deve oferecer cadastro/login de usuário  | 
-| Objetivo do teste	  | Verificar se a conta está sendo criada corretamente  |  
+| Objetivo do teste	  | Verificar se a conta está sendo logada corretamente  |  
 | Passo 1	  | Clicar no botão "Login |
 | Passo 2  | Preencher os campos | 
 | Passo 3  | Clicar no botão "Login" | 
 | Critérios de Êxito | O usuário recebe um alert de login bem sucedido e é redirecionado para o seu perfil |
+| Responsável | Bárbara Sena |
+
+<br>
 
 ## Tela de Login / Sem sucesso
 | Caso de teste | CT-01 - Cadastro de usuário | 
 | ------------- | ------------- |
 | Requisitos Associados	| RF-01	O sistema deve oferecer cadastro/login de usuário  | 
-| Objetivo do teste	  | Verificar se a conta está sendo criada corretamente  |  
+| Objetivo do teste	  | Verificar se a conta está sendo logada corretamente  |  
 | Passo 1	  | Clicar no botão "Login |
 | Passo 2  | Preencher os campos | 
 | Passo 3  | Clicar no botão "Login" | 
 | Critérios de Êxito | O usuário recebe um alert de login inválido |
+| Responsável | Bárbara Sena |
+
+<br>
