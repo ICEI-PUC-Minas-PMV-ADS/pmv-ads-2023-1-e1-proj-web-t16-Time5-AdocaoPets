@@ -40,9 +40,9 @@
 | Objetivo do teste	  | Verificar se o perfil de pets está sendo criado corretamente  |  
 | Passo 1	  | Ter uma conta que tenha "quero doar" como interesse |
 | Passo 2  | Clicar no ícone "+" ao lado da seção "Meus pets" | 
-| Passo 3  | Preencher os campos |
+| Passo 3  | Preencher alguns campos |
 | Passo 4  | Clicar em "cadastrar" | 
-| Critérios de Êxito | O usuário recebe um alert de erro ao adicionar pet |
+| Critérios de Êxito | O usuário recebe um alert para preencher todos os campos ao adicionar pet  |
 
 ## Tela de Login
 | Caso de teste | CT-01 - Cadastro de usuário | 
