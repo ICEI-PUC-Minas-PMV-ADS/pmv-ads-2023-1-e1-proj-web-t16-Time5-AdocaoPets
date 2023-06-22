@@ -4,6 +4,45 @@
 
 Nesta seção são apresentadas as telas desenvolvidas para cada uma das funcionalidades do sistema. 
 
+### Instruções de acesso
+1. Faça o download do arquivo do projeto (ZIP) ou clone do projeto no GitHub;
+2. Descompacte o arquivo em uma pasta específica;
+3. Abra o Visual Studio Code e execute o Live Server;
+4. Abra um navegador de Internet e informe a seguinte URL:http://127.0.0.1:5500/AdocaoPets/create.html;
+
+
+### RF-01 O sistema deve oferecer cadastro de usuário
+O usuário consegue se cadastrar na plataforma e fazer login para ter acesso a seu próprio perfil.
+
+#### Cadastro
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t16-Time5-AdocaoPets/assets/104398945/47ce3b91-99f5-4eaa-90a1-3ba90d058891)
+
+
+#### Login
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t16-Time5-AdocaoPets/assets/104398945/7cda16bd-b5d5-44d7-b6ea-daa7eb7f6c95)
+
+#### Requisitos atendidos: <br>
+- RF-01
+
+####  Artefatos da funcionalidade: <br>
+- cadastro-pessoa-fisica.html  <br>
+- cadastro.js <br>
+- login.js <br>
+- login.html   <br>
+
+####  Estrutura de dados:
+
+#### Cadastro
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t16-Time5-AdocaoPets/assets/104398945/185dc58b-f60c-4c1a-b1c5-6ab5666a2996" width="600px">
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t16-Time5-AdocaoPets/assets/104398945/72c64f04-71aa-4bfc-b4e8-6785af569f51" width="600px">
+
+#### Login
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t16-Time5-AdocaoPets/assets/104398945/266287eb-c099-4610-8b40-1dcd7c711fc0" width="600px">
+
+
+####  Integrante responsável: <br>
+- Bárbara Sena
+
 ### RF-02	- O sistema deve oferecer cadastro de gatos e cachorros
 
 O cadastro é feito pelo usuário responsável pelo pet e possui alguns campos importantes que devem ser preenchidos. O campo "espécie" oferece a opção de escolher entre "gato" e "cachorro".  A lista de pets aparesentada no perfil, em forma de tabela, é apenas para a visualização do professor-orientador e será excluída conforme o projeto for avançando.
