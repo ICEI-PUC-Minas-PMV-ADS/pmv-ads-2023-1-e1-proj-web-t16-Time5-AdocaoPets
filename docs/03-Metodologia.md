@@ -187,12 +187,17 @@ Links: <br>
 
 | Tarefa | Responsável | 
 | ------------- | ------------- | 
-| --  | -- |
-| -- | -- |
+| Atualizar design da aplicação web  | Bárbara Sena |
+| Terminar função "match"  | Bruno Nogueira e Bárbara Sena |
+| Terminar função "cadastro de ONGs"  | Rafael Xavier |
+| Terminar função "avialiar usuário"  | Andreia Moura |
+| Terminar função "ver perfil ONG" e "editar perfil ONG"  | Rafael Xavier |
+| Atualizar documentação "Template Padrão" | Lucas Ayala |
+| Gravar vídeo de apresentação | -- |
 
 ##### 3.6.3 Evidências:
 
-
+`Apresentação do Projeto`
 
 
 
