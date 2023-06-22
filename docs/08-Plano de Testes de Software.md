@@ -1,43 +1,65 @@
 # Plano de Testes de Software
 
-Existem 4 tipos de testes possíveis para uma aplicação web, são eles:
-
-- Teste de navegabilidade
-- Teste de resposividade
-- Teste de campos de páginas
-- Teste de ponta a ponta
-
-- Teste de navegabilidade:
-
-  Verificam se todos os links são navegáveis, estão corretos e levam a outras páginas existentes na aplicação.
-
-- Teste de responsividade:
-  
-  Verificam se a aplicação pode ser utilizada em dispositivos móveis.
-
-- Teste de campos de páginas
-
- Verificam se a página faz validação em seus campos de entrada.
-
-- Teste de ponta a ponta:
-
- Verificam a aplicação completa de uma funcionalidade do sistema, do início ao fim.
-  
-
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>
 
-Apresente os cenários de testes utilizados na realização dos testes da sua aplicação. Escolha cenários de testes que demonstrem os requisitos sendo satisfeitos.
+## Tela de Cadastro Usuário
+| Caso de teste | CT-01 - Cadastro de usuário | 
+| ------------- | ------------- |
+| Requisitos Associados	| RF-01	O sistema deve oferecer cadastro de usuário  | 
+| Objetivo do teste	  | Verificar se a conta está sendo criada corretamente  |  
+| Passo 1	  | Clicar no botão "Cadastrar |
+| Passo 2  | Preencher os campos | 
+| Passo 3  | Clicar no botão "Cadastrar" | 
+| Critérios de Êxito | O usuário é redirecionado para a página de login |
 
-Enumere quais cenários de testes foram selecionados para teste. Neste tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo de usuários que foi escolhido para participar do teste e as ferramentas utilizadas.
- 
-## Ferramentas de Testes (Opcional)
+## Tela de Cadastro Usuário / Sem sucesso
+| Caso de teste | CT-01 - Cadastro de usuário | 
+| ------------- | ------------- |
+| Requisitos Associados	| RF-01	O sistema deve oferecer cadastro de usuário  | 
+| Objetivo do teste	  | Verificar se a conta está sendo criada corretamente  |  
+| Passo 1	  | Clicar no botão "Cadastrar |
+| Passo 2  | Preencher os campos | 
+| Passo 3  | Clicar no botão "Cadastrar" | 
+| Critérios de Êxito | O usuário recebe um alert de erro ou um alert de que já existe um cadastro com esse e-mail |
 
-Comente sobre as ferramentas de testes utilizadas.
- 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+## Tela de Cadastro de pets
+| Caso de teste | CT-02 - Cadastro de pets | 
+| ------------- | ------------- |
+| Requisitos Associados	| RF-02	O sistema deve oferecer cadastro de gatos e cachorros | 
+| Objetivo do teste	  | Verificar se o perfil de pets está sendo criado corretamente  |  
+| Passo 1	  | Ter uma conta que tenha "quero doar" como interesse |
+| Passo 2  | Clicar no ícone "+" ao lado da seção "Meus pets" | 
+| Passo 3  | Preencher os campos |
+| Passo 4  | Clicar em "cadastrar" | 
+| Critérios de Êxito | O pet é adicionado a seção de "meus pets" |
+
+## Tela de Cadastro de pets / Sem sucesso
+| Caso de teste | CT-02 - Cadastro de pets | 
+| ------------- | ------------- |
+| Requisitos Associados	| RF-02	O sistema deve oferecer cadastro de gatos e cachorros | 
+| Objetivo do teste	  | Verificar se o perfil de pets está sendo criado corretamente  |  
+| Passo 1	  | Ter uma conta que tenha "quero doar" como interesse |
+| Passo 2  | Clicar no ícone "+" ao lado da seção "Meus pets" | 
+| Passo 3  | Preencher os campos |
+| Passo 4  | Clicar em "cadastrar" | 
+| Critérios de Êxito | O usuário recebe um alert de erro ao adicionar pet |
+
+## Tela de Login
+| Caso de teste | CT-01 - Cadastro de usuário | 
+| ------------- | ------------- |
+| Requisitos Associados	| RF-01	O sistema deve oferecer cadastro/login de usuário  | 
+| Objetivo do teste	  | Verificar se a conta está sendo criada corretamente  |  
+| Passo 1	  | Clicar no botão "Cadastrar |
+| Passo 2  | Preencher os campos | 
+| Passo 3  | Clicar no botão "Cadastrar" | 
+| Critérios de Êxito | O usuário é redirecionado para a página de login |
+
+## Tela de Login / Sem sucesso
+| Caso de teste | CT-01 - Cadastro de usuário | 
+| ------------- | ------------- |
+| Requisitos Associados	| RF-01	O sistema deve oferecer cadastro/login de usuário  | 
+| Objetivo do teste	  | Verificar se a conta está sendo criada corretamente  |  
+| Passo 1	  | Clicar no botão "Cadastrar |
+| Passo 2  | Preencher os campos | 
+| Passo 3  | Clicar no botão "Cadastrar" | 
+| Critérios de Êxito | O usuário recebe um alert de login inválido |
