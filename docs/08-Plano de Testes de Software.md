@@ -49,17 +49,17 @@
 | ------------- | ------------- |
 | Requisitos Associados	| RF-01	O sistema deve oferecer cadastro/login de usuário  | 
 | Objetivo do teste	  | Verificar se a conta está sendo criada corretamente  |  
-| Passo 1	  | Clicar no botão "Cadastrar |
+| Passo 1	  | Clicar no botão "Login |
 | Passo 2  | Preencher os campos | 
-| Passo 3  | Clicar no botão "Cadastrar" | 
-| Critérios de Êxito | O usuário é redirecionado para a página de login |
+| Passo 3  | Clicar no botão "Login" | 
+| Critérios de Êxito | O usuário recebe um alert de login bem sucedido e é redirecionado para o seu perfil |
 
 ## Tela de Login / Sem sucesso
 | Caso de teste | CT-01 - Cadastro de usuário | 
 | ------------- | ------------- |
 | Requisitos Associados	| RF-01	O sistema deve oferecer cadastro/login de usuário  | 
 | Objetivo do teste	  | Verificar se a conta está sendo criada corretamente  |  
-| Passo 1	  | Clicar no botão "Cadastrar |
+| Passo 1	  | Clicar no botão "Login |
 | Passo 2  | Preencher os campos | 
-| Passo 3  | Clicar no botão "Cadastrar" | 
+| Passo 3  | Clicar no botão "Login" | 
 | Critérios de Êxito | O usuário recebe um alert de login inválido |
