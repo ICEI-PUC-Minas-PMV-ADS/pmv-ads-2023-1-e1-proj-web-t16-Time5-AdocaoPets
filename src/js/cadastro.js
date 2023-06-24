@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from 'https://cdn.jsdelivr.net/npm/uuid@9.0.0/+esm'
+
 document.querySelector('form').addEventListener('submit', function (event) {
     event.preventDefault(); // Impede o envio do formulário padrão
 
@@ -11,6 +13,7 @@ document.querySelector('form').addEventListener('submit', function (event) {
         window.location.href = 'cadastro-ong.html';
     }
 });
+
 
 const signUp = e => {
     e.preventDefault();
@@ -35,44 +38,39 @@ const signUp = e => {
         );
 
     if (!exist) {
-        let newUserId = formData.length + 1; // Gera um novo ID para o usuário
+        let newUserId = uuidv4(); // Gera um novo ID para o usuário
         let interesses_usuario = document.querySelectorAll('input[type="checkbox"]:checked');
         let checkboxValues = Array.from(interesses_usuario).map(interesses_usuario => interesses_usuario.value);
 
+        formData.push({ 
+            id: newUserId, 
+            nome_usuario, 
+            email_usuario, 
+            pwd_usuario, 
+            local_usuario, 
+            celular_usuario, 
+            sobre_usuario, 
+            interesses_usuario: checkboxValues,
+            pets 
+        });
+        let stringFormData = JSON.stringify(formData);
+        localStorage.setItem('formData', stringFormData);
+        
         //Pega imagem do usuario
         let imagemInput = document.getElementById('imagem_usuario');
         let imagemFile = imagemInput.files[0];
-
         if (imagemFile) {
             let reader = new FileReader();
             reader.onload = function (event) {
                 let imagemDataUrl = event.target.result;
-
-                formData.push({ id: newUserId, nome_usuario, email_usuario, pwd_usuario, local_usuario, celular_usuario, sobre_usuario, interesses_usuario: checkboxValues, imagem_usuario: imagemDataUrl, pets });
-                localStorage.setItem('formData', JSON.stringify(formData));
-                document.querySelector('form').reset();
-                document.getElementById('nome_usuario').focus();
-                window.location.href = 'login.html';
+                localStorage.setItem('formDataImage:'+newUserId, imagemDataUrl);          
             };
-
             reader.readAsDataURL(imagemFile);
-        } else {
-            formData.push({
-                id: newUserId,
-                nome_usuario,
-                email_usuario,
-                pwd_usuario,
-                local_usuario,
-                celular_usuario,
-                sobre_usuario,
-                interesses_usuario: checkboxValues
-            });
+        } 
 
-            localStorage.setItem('formData', JSON.stringify(formData));
-            document.querySelector('form').reset();
-            document.getElementById('nome_usuario').focus();
-            window.location.href = 'login.html';
-        }
+        document.querySelector('form').reset();
+        document.getElementById('nome_usuario').focus();
+        window.location.href = 'login.html';
     } else {
         alert("Ops... Usuário duplicado!!!\nVocê já está cadastrado.");
     }

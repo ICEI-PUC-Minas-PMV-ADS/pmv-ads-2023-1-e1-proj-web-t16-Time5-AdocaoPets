@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from 'https://cdn.jsdelivr.net/npm/uuid@9.0.0/+esm'
+
 const signUp = e => {
     e.preventDefault();
 
@@ -20,8 +22,18 @@ const signUp = e => {
         );
 
     if (!exist) {
-        let newIdOng = formData.length + 1; // Gera um novo ID para o usuário
+        let newIdOng = uuidv4(); // Gera um novo ID para o usuário
 
+        formData.push({ 
+            id: newIdOng, 
+            nome_ong, 
+            email_ong, 
+            pwd_ong, 
+            cep_ong, 
+            telefone_ong, 
+            sobre_ong
+        });
+        localStorage.setItem('formData', JSON.stringify(formData));
 
         //Pega imagem do usuario
         let imagemInput = document.getElementById('imagem_ong');
@@ -31,33 +43,15 @@ const signUp = e => {
             let reader = new FileReader();
             reader.onload = function (event) {
                 let imagemDataUrl = event.target.result;
-
-                formData.push({ id: newIdOng, nome_ong, email_ong, pwd_ong, cep_ong, telefone_ong, sobre_ong , imagem_ong: imagemDataUrl});
-                localStorage.setItem('formData', JSON.stringify(formData));
-                document.querySelector('form').reset();
-                document.getElementById('nome_ong').focus();
-                window.location.href = 'login.html';
+                localStorage.setItem('formDataImage:'+newUserId, imagemDataUrl);   
             };
-
             reader.readAsDataURL(imagemFile);
 
-        } else {
-            formData.push({
-                id: newIdOng,
-                nome_ong,
-                email_ong,
-                pwd_ong,
-                cep_ong,
-                telefone_ong,
-                sobre_ong,
-                type:'ong'
-            });
-
-            localStorage.setItem('formData', JSON.stringify(formData));
-            document.querySelector('form').reset();
-            document.getElementById('nome_ong').focus();
-            window.location.href = 'login.html';
         }
+
+        document.querySelector('form').reset();
+        document.getElementById('nome_ong').focus();
+        window.location.href = 'login.html';
     } else {
         alert("Ops... Ong duplicado!!!\nVocê já está cadastrado.");
     }

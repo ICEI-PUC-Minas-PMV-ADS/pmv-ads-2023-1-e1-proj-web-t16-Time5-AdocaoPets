@@ -15,9 +15,10 @@ if (user) {
     document.getElementById('local_usuario').textContent = user.local_usuario;
     document.getElementById('sobre_usuario').textContent = user.sobre_usuario;
 
-    if (user.imagem_usuario) {
+    let imagem_usuario = localStorage.getItem('formDataImage:'+user.id);
+    if (imagem_usuario) {
         // Exibe a imagem do usuário
-        document.getElementById('imagem_usuario').src = user.imagem_usuario;
+        document.getElementById('imagem_usuario').src = imagem_usuario;
     }
 
     let interesses_usuario = document.querySelectorAll('input[type="checkbox"]:checked');
@@ -269,6 +270,18 @@ function updateUserData() {
     user.sobre_usuario = sobre;
     user.interesses_usuario = checkboxValues;
 
+     // Atualizar os dados no localStorage
+     const formData = JSON.parse(localStorage.getItem('formData')) || [];
+     const index = formData.findIndex((u) => u.id === user.id);
+     if (index !== -1) {
+         formData[index] = user;
+         localStorage.setItem('formData', JSON.stringify(formData));
+
+     } else {
+         console.log('Usuário não encontrado no localStorage.');
+     }
+
+
     //Pega imagem do usuario
     let imagemInput = document.getElementById('imagem_usuario_editar');
     let imagemFile = imagemInput.files[0];
@@ -277,46 +290,18 @@ function updateUserData() {
         let reader = new FileReader();
         reader.onload = function (event) {
             let imagemDataUrl = event.target.result;
+            // Exibir a imagem do usuário
+            const imagemUsuarioPerfil = document.getElementById('imagem_usuario');
+            imagemUsuarioPerfil.src = imagemDataUrl;
 
-            user.imagem_usuario = imagemDataUrl;
+            localStorage.setItem('formDataImage:'+user.id, imagemDataUrl);   
 
-            // Atualizar os dados no localStorage
-            const formData = JSON.parse(localStorage.getItem('formData')) || [];
-            const index = formData.findIndex((u) => u.id === user.id);
-            if (index !== -1) {
-                formData[index] = user;
-                localStorage.setItem('formData', JSON.stringify(formData));
-                console.log('Dados do usuário atualizados com sucesso!');
-
-                // Exibir a imagem do usuário
-                const imagemUsuarioPerfil = document.getElementById('imagem_usuario');
-                imagemUsuarioPerfil.src = user.imagem_usuario;
-
-                window.location.href = 'perfil_usuario.html';
-            } else {
-                console.log('Usuário não encontrado no localStorage.');
-            }
         };
 
         reader.readAsDataURL(imagemFile);
-    } else {
-        // Atualizar os dados no localStorage
-        const formData = JSON.parse(localStorage.getItem('formData')) || [];
-        const index = formData.findIndex((u) => u.id === user.id);
-        if (index !== -1) {
-            formData[index] = user;
-            localStorage.setItem('formData', JSON.stringify(formData));
-            console.log('Dados do usuário atualizados com sucesso!');
-        } else {
-            console.log('Usuário não encontrado no localStorage.');
-        }
-
-        // Exibir a imagem do usuário
-        const imagemUsuarioPerfil = document.getElementById('imagem_usuario');
-        imagemUsuarioPerfil.src = user.imagem_usuario;
-
-        window.location.href = 'perfil_usuario.html';
-    }
+    } 
+            
+    window.location.href = 'perfil_usuario.html';
 }
 
 
