@@ -6,15 +6,12 @@ body {
 	font-family: 'Roboto', sans-serif;
 	margin: 0;
 }
-.container {
-	display: flex;
-}
+
 .side {
 	min-width: 320px;
 	height: 200px;
 	background-color: #fff;
 	height: 100%;
-	min-height: 100vh;
 	border-right: 1px solid #e1e1e1;
 }
 .content {
@@ -198,4 +195,55 @@ body {
 .content .buttons .star {
 	width: 60px;
 	height: 60px;
+}
+
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+	background-color: black;
+}
+
+.card-pet{
+	position: relative;
+	width: 350px;
+	height: 400px;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 0 1px 10px 0 rgba(0, 20, 20, 0.5);
+}
+
+.card-pet .image .user{
+	width: 100%;
+    object-fit: cover;
+}
+
+.card-pet .profile{
+	position: absolute;
+	bottom: 0px;
+    left: 20px;
+}
+
+.card-pet .profile {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 5px #444;
+}
+
+.card-pet .profile .local {
+    display: Fixed;
+    align-items: center;
+    padding: 0 0 20px 0;
+	font-size: 15px;
+}
+
+.footer{
+	width: 100%;
+	background-color: #61bce3;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 3rem;
+	margin-top: 3rem;
 }

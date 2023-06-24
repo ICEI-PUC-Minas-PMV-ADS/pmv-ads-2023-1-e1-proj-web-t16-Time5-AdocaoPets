@@ -27,173 +27,167 @@
 <body>
 	<nav class="navbar navbar-expand-lg bg-body-tertiary">
 		<div class="container">
-			<a class="navbar-brand" href="index.html">Adoção Pets</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-				aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarText">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">Explorar</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Mensagens</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Conexões</a>
-					</li>
-				</ul>
-				<div class="dropdown">
-					<button type="button" id="perfil" data-bs-toggle="dropdown" aria-expanded="false">
-						<i class="bi bi-person-circle"></i> Meu perfil
-					</button>
-					<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="#">Configurações</a></li>
-						<li><a class="dropdown-item" href="#">Sair</a></li>
-					</ul>
-				</div>
+		  <img src="./img/logo-icon.png" style="width: 100px;"> <a class="navbar-brand" href="index.html"
+			style="color: #FF5B2E;">AdoçãoPet</a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+			aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarText">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			  <li class="nav-item">
+				<a class="nav-link active" aria-current="page" href="Match.html">Explorar</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#">Mensagens</a>
+			  </li>
+			</ul>
+			<div class="dropdown">
+			  <button type="button" id="perfil" data-bs-toggle="dropdown" aria-expanded="false">
+				<i class="bi bi-person-circle"></i> Meu perfil
+			  </button>
+			  <ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="perfil_usuario.html">Ver perfil</a></li>
+				<li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#editarDadosUserModal"
+					onclick="fillUserData()">Editar
+					perfil</a></li>
+				<li><a class="dropdown-item" id="btn-logout" href="#">Sair</a></li>
+			  </ul>
 			</div>
+		  </div>
 		</div>
+		</div>
+	
 	</nav>
 
 	<div class="container">
-		<div class="side">
-			<div class="header">
-				<div class="avatar">
-					<img src="https://randomuser.me/api/portraits/women/64.jpg" alt="" />
+		<div class="row">
+			<div class="col-12 col-lg-4">
+				<div class="side">
+					<div class="header">
+						<div class="avatar">
+							<img src="https://randomuser.me/api/portraits/women/64.jpg" alt="" />
+						</div>
+						<div class="title">Meu perfil</div>
+					</div>
+					<div class="menu">
+						<ul>
+							<li>Matches</li>
+							<li class="active">Mensagens</li>
+						</ul>
+					</div>
+					<div class="messages">
+						<div class="avatar">
+							<img src="https://randomuser.me/api/portraits/women/38.jpg" alt="" />
+						</div>
+						<div class="message">
+							<div class="user">Vanessa</div>
+							<div class="text">O pet é vacinado?</div>
+						</div>
+					</div>
+					<div class="messages">
+						<div class="avatar">
+							<img src="https://randomuser.me/api/portraits/women/39.jpg" alt="" />
+						</div>
+						<div class="message">
+							<div class="user">Caroline</div>
+							<div class="text">Podemos marcar a adoção?</div>
+						</div>
+					</div>
+					<div class="messages">
+						<div class="avatar">
+							<img src="https://randomuser.me/api/portraits/women/40.jpg" alt="" />
+						</div>
+						<div class="message">
+							<div class="user">Roberta</div>
+							<div class="text">Combinado, muito obrigada!</div>
+						</div>
+					</div>
+					<div class="messages">
+						<div class="avatar">
+							<img src="https://randomuser.me/api/portraits/women/42.jpg" alt="" />
+						</div>
+						<div class="message">
+							<div class="user">Caroline</div>
+							<div class="text">O Pet ainda pode ser adotado?</div>
+						</div>
+					</div>
 				</div>
-				<div class="title">Meu perfil</div>
 			</div>
-			<div class="menu">
-				<ul>
-					<li>Matches</li>
-					<li class="active">Mensagens</li>
-				</ul>
-			</div>
-			<div class="messages">
-				<div class="avatar">
-					<img src="https://randomuser.me/api/portraits/women/38.jpg" alt="" />
-				</div>
-				<div class="message">
-					<div class="user">Vanessa</div>
-					<div class="text">O pet é vacinado?</div>
-				</div>
-			</div>
-			<div class="messages">
-				<div class="avatar">
-					<img src="https://randomuser.me/api/portraits/women/39.jpg" alt="" />
-				</div>
-				<div class="message">
-					<div class="user">Caroline</div>
-					<div class="text">Podemos marcar a adoção?</div>
-				</div>
-			</div>
-			<div class="messages">
-				<div class="avatar">
-					<img src="https://randomuser.me/api/portraits/women/40.jpg" alt="" />
-				</div>
-				<div class="message">
-					<div class="user">Roberta</div>
-					<div class="text">Combinado, muito obrigada!</div>
-				</div>
-			</div>
-			<div class="messages">
-				<div class="avatar">
-					<img src="https://randomuser.me/api/portraits/women/42.jpg" alt="" />
-				</div>
-				<div class="message">
-					<div class="user">Caroline</div>
-					<div class="text">O Pet ainda pode ser adotado?</div>
-				</div>
-			</div>
-		</div>
+			<div class="col-12 col-lg-8">
+				<div id="carouselExampleIndicators" class="carousel slide">
+					<div class="carousel-inner">
+						<div class="carousel-item">
+							<div class="content">
+								<div class="card-pet">
+									<div class="image">
+										<img class="user" src="./img/pet1.png" alt="" />
+										<div class="profile">
+											<div class="name">Ares<span></span></div>
+											<div class="local">
+												<i class="fas fa-map-marker-alt"> Santa Luzia</i>
+												<span></span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="buttons">
+									<div class="no">
+										<i class="fas fa-times"></i>
+									</div>
+									<div class="star">
+										<i class="fas fa-star fa"></i>
+									</div>
+									<div class="heart">
+										<i class="fas fa-heart"></i>
 
-	</div>
-	</div>
-	</div>
-	</div>
-
-	<div id="carouselExampleIndicators" class="carousel slide">
-		<div class="carousel-indicators">
-			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-				aria-current="true" aria-label="Slide 1"></button>
-			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-				aria-label="Slide 2"></button>
-			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-				aria-label="Slide 3"></button>
-		</div>
-		<div class="carousel-inner">
-			<div class="carousel-item active" id=petsContainer>
-				<div class="content">
-					<div class="card">
-						<div class="user">
-							<img class="user"
-								src="https://img.freepik.com/fotos-gratis/lindo-retrato-de-cachorro_23-2149218450.jpg?w=1060&t=st=1686008577~exp=1686009177~hmac=283097dc21db776b70a6966580b3d4290076ee6ccd68e2ec7081bf174826b567"
-								alt="" />
-							<div class="profile">
-								<div class="name" id="nome_pet"><span></span></div>
-								<div class="local">
-									<i class="fas fa-map-marker-alt"> Contagem</i>
-									<span></span>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="buttons">
-						<div class="no">
-							<i class="fas fa-times"></i>
-						</div>
-						<div class="star">
-							<i class="fas fa-star fa"></i>
-						</div>
-						<div class="heart">
-							<i class="fas fa-heart"></i>
+						<div class="carousel-item active">
+							<div class="content">
+								<div class="card-pet">
+									<div class="image">
+										<img class="user" src="./img/pet2.png" alt="" />
+										<div class="profile">
+											<div class="name">Ares<span></span></div>
+											<div class="local">
+												<i class="fas fa-map-marker-alt"> Santa Luzia</i>
+												<span></span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="buttons">
+									<div class="no">
+										<i class="fas fa-times"></i>
+									</div>
+									<div class="star">
+										<i class="fas fa-star fa"></i>
+									</div>
+									<div class="heart">
+										<i class="fas fa-heart"></i>
 
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="carousel-item">
-				<div class="content">
-					<div class="card">
-						<div class="user">
-							<img class="user" src="./img/pet2.png" alt="" />
-							<div class="profile">
-								<div class="name">Ares<span></span></div>
-								<div class="local">
-									<i class="fas fa-map-marker-alt"> Santa Luzia</i>
-									<span></span>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="buttons">
-						<div class="no">
-							<i class="fas fa-times"></i>
-						</div>
-						<div class="star">
-							<i class="fas fa-star fa"></i>
-						</div>
-						<div class="heart">
-							<i class="fas fa-heart"></i>
 
-						</div>
 					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+						data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+						data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
 				</div>
 			</div>
-
 		</div>
-		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-			data-bs-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Previous</span>
-		</button>
-		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-			data-bs-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Next</span>
-		</button>
 	</div>
 
 	<footer class="container_footer">
