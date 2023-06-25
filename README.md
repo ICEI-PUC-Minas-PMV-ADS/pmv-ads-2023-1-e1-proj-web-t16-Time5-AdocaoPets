@@ -9,7 +9,6 @@ Projeto: Desenvolvimento de Aplicação Web Front-End - Turma 16 - 2023/1
 * Andréia Borges da Silva de Moura Fé
 * Bárbara Fernandes Sena
 * Bruno Nogueira Martins Cardoso
-* Gustavo da Costa Monte
 * Lucas Ayala Soares
 * Rafael Xavier Franco
 
