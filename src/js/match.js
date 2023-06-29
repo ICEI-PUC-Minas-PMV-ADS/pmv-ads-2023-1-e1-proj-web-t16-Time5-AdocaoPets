@@ -68,3 +68,16 @@ function showAllPets() {
 }
 
 showAllPets();
+
+
+// Realiza o logout do usuário
+const logout = () => {
+  // Remove os dados do usuário do localStorage
+  localStorage.removeItem('userId');
+
+  // Redireciona para a página de login
+  window.location.href = 'login.html';
+};
+
+// Chame a função logout quando o usuário clicar no botão de logout
+document.getElementById('btn-logout').addEventListener('click', logout);

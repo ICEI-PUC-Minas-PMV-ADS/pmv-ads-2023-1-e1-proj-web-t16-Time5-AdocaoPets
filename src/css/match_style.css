@@ -254,3 +254,11 @@ body {
 	padding: 3rem;
 	margin-top: 3rem;
 }
+
+@media screen and (max-width: 991px) {
+
+	.side {
+		display: none;
+	}
+
+}
