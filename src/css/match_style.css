@@ -262,3 +262,22 @@ body {
 	}
 
 }
+
+.petCardLink:link {
+
+	text-decoration: none;
+	background-color: #F6F7FB;
+	color: #fd5068;
+	border-radius: 4px;
+}
+.petCardLink:visited{
+
+	text-decoration: dotted;
+}
+.petCardLink:hover{
+	font-weight: bolder;
+	text-decoration: dotted orangered;
+}
+.petCardLink:active{
+	font-style: italic;
+}

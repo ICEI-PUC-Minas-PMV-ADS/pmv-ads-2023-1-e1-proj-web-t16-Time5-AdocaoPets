@@ -31,7 +31,7 @@ function showAllPets() {
                   <div class="image">
                     <img class="user" src="${pet.imagem}" alt="" />
                     <div class="profile">
-                      <div class="name">${pet.nome}</button></div>
+                      <div class="name"> <a class="petCardLink" href="perfil_pet.html">${pet.nome}</a></button></div>
                       <div class="local">
                         <i class="fas fa-map-marker-alt"> ${pet.local}</i>
                         <div class="name">
