@@ -1,65 +1,70 @@
-function showPets() {
-    // Obtém os dados dos pets do LocalStorage
-    const pets = JSON.parse(localStorage.getItem('pets')) || [];
+// Obtém o ID do usuário logado armazenado no localStorage
+let userId = localStorage.getItem('userId');
 
-    // Obtém o elemento que conterá os pets
-    const petsContainer = document.getElementById('petsContainer');
+// Obtém os dados do usuário do localStorage
+let formData = JSON.parse(localStorage.getItem('formData')) || [];
 
-    // Limpa o conteúdo atual do container de pets
-    petsContainer.innerHTML = '';
 
-    // Itera sobre os pets e cria os elementos correspondentes
-    pets.forEach((pet) => {
-        // Cria o elemento do item do carrossel
-        const carouselItem = document.createElement('div');
-        carouselItem.className = 'carousel-item';
-        petsContainer.appendChild(carouselItem);
 
-        // Cria o elemento do conteúdo do item
-        const content = document.createElement('div');
-        content.className = 'content';
-        carouselItem.appendChild(content);
+function showAllPets() {
+  const userData = JSON.parse(localStorage.getItem('formData'));
+  const petsContainer = document.getElementById('container_pet');
+  petsContainer.innerHTML = '';
 
-        // Cria o elemento do card do pet
-        const card = document.createElement('div');
-        card.className = 'card';
-        content.appendChild(card);
+  let isFirstItem = true;
 
-        // Cria o elemento do usuário
-        const user = document.createElement('div');
-        user.className = 'user';
-        card.appendChild(user);
+  if (userData && userData.length > 0) {
+    userData.forEach(user => {
+      if (user && user.pets && user.pets.length > 0) {
+        user.pets.forEach(pet => {
+          const petCard = document.createElement('div');
+          petCard.className = 'carousel-item' + (isFirstItem ? ' active' : '');
+          isFirstItem = false;
 
-        // Cria a imagem do pet
-        const imgPet = document.createElement('img');
-        imgPet.className = 'user';
-        imgPet.src = pet.urlImagem;
-        imgPet.alt = '';
-        user.appendChild(imgPet);
+          const petName = document.createElement('a');
+          petName.textContent = pet.nome;
+          petName.href = `perfil_pet.html?id=${pet.id}`;
 
-        // Cria o elemento do perfil do pet
-        const profile = document.createElement('div');
-        profile.className = 'profile';
-        user.appendChild(profile);
+          petCard.innerHTML = `
+              <div class="content">
+                <div class="card-pet">
+                  <div class="image">
+                    <img class="user" src="${pet.imagem}" alt="" />
+                    <div class="profile">
+                      <div class="name">${pet.nome}</button></div>
+                      <div class="local">
+                        <i class="fas fa-map-marker-alt"> ${pet.local}</i>
+                        <div class="name">
+                          <span class="badge text-bg-orange"> ${pet.especie} </span>
+                          <span class="badge text-bg-orange"> ${pet.sexo} </span>
+                          <span class="badge text-bg-orange"> ${pet.porte} </span>
+                          <span class="badge text-bg-orange"> ${pet.raca} </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="buttons">
+                  <div class="no">
+                    <i class="fas fa-times"></i>
+                  </div>
+                  <div class="star">
+                    <i class="fas fa-star fa"></i>
+                  </div>
+                  <div class="heart">
+                    <i class="fas fa-heart"></i>
+                  </div>
+                </div>
+              </div>
+            `;
 
-        // Cria o elemento do nome do pet
-        const name = document.createElement('div');
-        name.className = 'name';
-        name.textContent = pet.nome;
-        profile.appendChild(name);
+          petsContainer.appendChild(petCard);
+        });
+      }
+    });
+  } else {
+    petsContainer.textContent = 'Nenhum pet cadastrado.';
+  }
+}
 
-        // Cria o elemento do local do pet
-        const local = document.createElement('div');
-        local.className = 'local';
-        local.innerHTML = `<i class="fas fa-map-marker-alt"></i> ${pet.local}`;
-        profile.appendChild(local);
-
-        // Cria os botões
-        const buttons = document.createElement('div');
-        buttons.className = 'buttons';
-        content.appendChild(buttons);
-
-    })
-};
-
-//showPets();
+showAllPets();

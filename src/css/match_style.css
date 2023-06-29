@@ -1,6 +1,7 @@
 * {
 	box-sizing: border-box;
 }
+
 body {
 	background-color: #f5f7fa;
 	font-family: 'Roboto', sans-serif;
@@ -14,6 +15,7 @@ body {
 	height: 100%;
 	border-right: 1px solid #e1e1e1;
 }
+
 .content {
 	width: 100%;
 	display: flex;
@@ -21,6 +23,7 @@ body {
 	align-items: center;
 	flex-direction: column;
 }
+
 .side .header {
 	background: linear-gradient(262deg, #ff7854, #fd267d);
 	width: 100%;
@@ -47,7 +50,7 @@ body {
 
 .side .menu ul {
 	display: flex;
-	padding: 0 20px;
+	padding: 20px 20px;
 }
 
 .side .menu ul li {
@@ -198,11 +201,15 @@ body {
 }
 
 
-.carousel-control-next-icon, .carousel-control-prev-icon{
-	background-color: black;
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	background-color: #61BCE3;
 }
 
-.card-pet{
+.card-pet {
 	position: relative;
 	width: 350px;
 	height: 400px;
@@ -211,33 +218,33 @@ body {
 	box-shadow: 0 1px 10px 0 rgba(0, 20, 20, 0.5);
 }
 
-.card-pet .image .user{
+.card-pet .image .user {
 	width: 100%;
-    object-fit: cover;
-}
-
-.card-pet .profile{
-	position: absolute;
-	bottom: 0px;
-    left: 20px;
+	object-fit: cover;
 }
 
 .card-pet .profile {
-    color: #fff;
-    font-size: 32px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    text-shadow: 1px 1px 5px #444;
+	position: absolute;
+	bottom: 0px;
+	left: 20px;
+}
+
+.card-pet .profile {
+	color: #fff;
+	font-size: 32px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	text-shadow: 1px 1px 5px #444;
 }
 
 .card-pet .profile .local {
-    display: Fixed;
-    align-items: center;
-    padding: 0 0 20px 0;
+	display: Fixed;
+	align-items: center;
+	padding: 0 0 20px 0;
 	font-size: 15px;
 }
 
-.footer{
+.footer {
 	width: 100%;
 	background-color: #61bce3;
 	display: flex;

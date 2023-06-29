@@ -1,8 +1,10 @@
+
 // Obtém o ID do usuário logado armazenado no localStorage
 let userId = localStorage.getItem('userId');
 
 // Obtém os dados do usuário do localStorage
 let formData = JSON.parse(localStorage.getItem('formData')) || [];
+
 
 
 // Procura pelo usuário com o ID correspondente
@@ -15,7 +17,7 @@ if (user) {
     document.getElementById('local_usuario').textContent = user.local_usuario;
     document.getElementById('sobre_usuario').textContent = user.sobre_usuario;
 
-    let imagem_usuario = localStorage.getItem('formDataImage:'+user.id);
+    let imagem_usuario = localStorage.getItem('formDataImage:' + user.id);
     if (imagem_usuario) {
         // Exibe a imagem do usuário
         document.getElementById('imagem_usuario').src = imagem_usuario;
@@ -61,20 +63,26 @@ document.getElementById('btn-logout').addEventListener('click', logout);
 
 
 
-
-// Parte de adicionar pet
+// Variável global para armazenar o contador de IDs
+let petIdCounter = 1;
 
 function addPet() {
+    // Resto do código para obter os dados do pet...
+
+    // Gera o ID único para o pet
+    let petId = petIdCounter++;
+
+    // Verifica se o ID já existe na lista de pets
+    while (user.pets.some((pet) => pet.id === petId)) {
+        petId = petIdCounter++;
+    }
+
     const nome = document.getElementById('nome').value;
     const raca = document.getElementById('raca').value;
     const local = document.getElementById('local').value;
     const especie = document.getElementById('especie').value;
     const sexo = document.getElementById('sexo').value;
     const porte = document.getElementById('porte').value;
-
-
-
-
     const sobremim = document.getElementById('sobremim').value;
 
     // Cria um objeto com as características selecionadas pelo usuário
@@ -115,6 +123,7 @@ function addPet() {
                 user.pets = user.pets || [];
 
                 user.pets.push({
+                    id: petId,
                     nome,
                     raca,
                     local,
@@ -146,7 +155,6 @@ function addPet() {
 
     reader.readAsDataURL(imagemFile);
 }
-
 
 
 
@@ -190,7 +198,7 @@ function showPetsCard() {
             </div>
 
               <div class="d-flex">
-                <td><button class="btn_pet btn btn-primary" onclick="showPetProfile(${index})">Ver</button></td>
+                <td><button class="btn_pet btn btn-primary" onclick="showPetProfile((${index}))">Ver</button></td>
                 <td><button class="btn_pet btn btn-primary" onclick="deletePet(${index})">Excluir</button></td>
               </div>
               
@@ -270,16 +278,16 @@ function updateUserData() {
     user.sobre_usuario = sobre;
     user.interesses_usuario = checkboxValues;
 
-     // Atualizar os dados no localStorage
-     const formData = JSON.parse(localStorage.getItem('formData')) || [];
-     const index = formData.findIndex((u) => u.id === user.id);
-     if (index !== -1) {
-         formData[index] = user;
-         localStorage.setItem('formData', JSON.stringify(formData));
+    // Atualizar os dados no localStorage
+    const formData = JSON.parse(localStorage.getItem('formData')) || [];
+    const index = formData.findIndex((u) => u.id === user.id);
+    if (index !== -1) {
+        formData[index] = user;
+        localStorage.setItem('formData', JSON.stringify(formData));
 
-     } else {
-         console.log('Usuário não encontrado no localStorage.');
-     }
+    } else {
+        console.log('Usuário não encontrado no localStorage.');
+    }
 
 
     //Pega imagem do usuario
@@ -294,13 +302,13 @@ function updateUserData() {
             const imagemUsuarioPerfil = document.getElementById('imagem_usuario');
             imagemUsuarioPerfil.src = imagemDataUrl;
 
-            localStorage.setItem('formDataImage:'+user.id, imagemDataUrl);   
+            localStorage.setItem('formDataImage:' + user.id, imagemDataUrl);
 
         };
 
         reader.readAsDataURL(imagemFile);
-    } 
-            
+    }
+
     window.location.href = 'perfil_usuario.html';
 }
 
